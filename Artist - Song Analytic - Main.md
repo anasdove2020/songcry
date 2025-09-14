@@ -66,7 +66,7 @@
 
 * AC 2: Clicking dropdown opens bottom sheet with time period options
 
-\*- AC 3: Bottom sheet includes comprehensive time period options:
+*- AC 3: Bottom sheet includes comprehensive time period options:
 
 * Latest 24 hours
 
