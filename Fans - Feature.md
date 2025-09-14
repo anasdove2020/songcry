@@ -472,14 +472,15 @@ so that I can complete my account creation.
 **User Story:**  
 As a new user on Set Username Page,  
 I want to click Create Account with valid inputs  
-so that I can proceed to set my date of birth.
+so that I can complete my account creation and proceed to profile setup.
 
 **Acceptance Criteria:**
-- AC 1: Create Account button is only enabled when username is valid
-- AC 2: Button click saves username and profile picture
-- AC 3: Button click navigates to Set Date of Birth page
-- AC 4: Loading state with spinner is shown during processing
-- AC 5: Error handling for account creation failures
+- AC 1: Create Account button is only enabled when username is valid and available
+- AC 2: Button click creates complete user account with email, password, username, and profile picture
+- AC 3: Button click navigates to Set Date of Birth page after successful account creation
+- AC 4: Loading state with spinner is shown during account creation process
+- AC 5: Error handling for account creation failures with appropriate user feedback
+- AC 6: User authentication token is generated and stored upon successful account creation
 
 ---
 
@@ -685,11 +686,10 @@ so that I know if my birth date is valid and acceptable.
 **Acceptance Criteria:**
 - AC 1: Display error message for invalid date formats
 - AC 2: Validate that selected date is not in the future
-- AC 3: Show error for dates that would make user under 13 years old
-- AC 4: Input field shows red border when validation fails
-- AC 5: Error messages appear below the input field
-- AC 6: Error states clear when valid date is entered
-- AC 7: Real-time validation as user types or selects date
+- AC 3: Input field shows red border when validation fails
+- AC 4: Error messages appear below the input field
+- AC 5: Error states clear when valid date is entered
+- AC 6: Real-time validation as user types or selects date
 
 ---
 
@@ -721,11 +721,13 @@ so that I can proceed to set my hometown information.
 
 **Acceptance Criteria:**
 - AC 1: Next button is only enabled when valid date is entered
-- AC 2: Button click saves birth date to user profile
-- AC 3: Button click navigates to Set Hometown page
-- AC 4: Loading state with spinner is shown during processing
-- AC 5: Error handling for date saving failures
-- AC 6: Button remains disabled for invalid or empty dates
+- AC 2: Button remains disabled when date input is empty
+- AC 3: Button is enabled only when valid date is entered
+- AC 4: Button click calls PUT API to update user's date of birth
+- AC 5: Button click navigates to Set Hometown page after successful API call
+- AC 6: Loading state with spinner is shown during API processing
+- AC 7: Error handling for API call failures
+- AC 8: Button remains disabled for invalid or empty dates
 
 ---
 
@@ -763,40 +765,23 @@ so that I understand the expected date format and can enter it correctly.
 
 ---
 
-### Task: Handle Age Restriction Validation
-
-**User Story:**  
-As a platform administrator,  
-I want to ensure users meet minimum age requirements  
-so that the platform complies with legal age restrictions.
-
-**Acceptance Criteria:**
-- AC 1: Calculate age based on entered birth date
-- AC 2: Display error message for users under 13 years old
-- AC 3: Show specific error: "You must be at least 13 years old to create an account"
-- AC 4: Prevent form submission for underage users
-- AC 5: Age calculation accounts for leap years and current date
-- AC 6: Error message includes link to parental consent information
-
----
-
-### Task: Create Date Validation API Endpoint
+### Task: Update User Date of Birth API Endpoint
 
 **User Story:**  
 As a backend developer,  
-I want to create an API endpoint for date validation and age verification  
-so that the frontend can validate birth dates and ensure compliance with age restrictions.
+I want to create an API endpoint to update user's date of birth  
+so that the user profile can be saved when they complete the date of birth step.
 
 **Acceptance Criteria:**
-- AC 1: Create POST endpoint `/api/auth/validate-birthdate` for date validation
-- AC 2: Endpoint validates date format and checks if date is valid
-- AC 3: Calculate and verify minimum age requirement (13 years)
-- AC 4: Return HTTP 200 status code for valid dates meeting age requirements
-- AC 5: Return HTTP 400 status code for invalid date formats
-- AC 6: Return HTTP 403 status code for dates not meeting age requirements
-- AC 7: Response includes JSON format with validation status and error messages
-- AC 8: Implement proper error handling for date calculation edge cases
-- AC 9: Log age verification attempts for compliance monitoring
-- AC 10: Rate limiting to prevent automated age verification attacks
+- AC 1: Create PUT endpoint `/api/user/date-of-birth` for updating user's birth date
+- AC 2: Endpoint accepts JSON payload with date of birth in MM/DD/YYYY format
+- AC 3: Validate user authentication token before processing request
+- AC 4: Update user's date of birth in database
+- AC 5: Return HTTP 200 status code for successful updates
+- AC 6: Return HTTP 400 status code for invalid date format
+- AC 7: Return HTTP 401 status code for unauthorized requests
+- AC 8: Response includes JSON format with update status
+- AC 9: Implement proper error handling for database update failures
+- AC 10: Log date of birth updates for audit purposes
 
 ---
