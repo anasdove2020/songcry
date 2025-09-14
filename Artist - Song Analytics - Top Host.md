@@ -2,7 +2,7 @@
 
 ## Page: Top Host
 
-*Note: Host refers to fans of the artist who host songs on the platform.*
+*Note: Host refers to fans of the artist who host songs on the platform. Hosting a song means fans share, promote, or feature the artist's songs on their social media profiles, playlists, or content, helping to increase the song's reach and engagement.*
 
 ### Task 1: Header Section
 
@@ -75,6 +75,8 @@ so that I can see the global performance rankings in an organized format.
 
 ### Task 5: Host Detail Data
 
+*Note: Host refers to fans of the artist who host songs on the platform.*
+
 **User Story:**  
 As an artist, I want to see detailed information for each host in the ranking list  
 so that I can understand their profile, performance metrics, and fan engagement levels.
@@ -93,3 +95,4 @@ so that I can understand their profile, performance metrics, and fan engagement 
 * AC 10: Loading states are shown during data fetch operations
 * AC 11: Error handling for missing or failed data loads
 * AC 12: Consistent typography hierarchy for all host information
+* AC 13: Clicking on any host entry navigates to the Fan Profile page with smooth page transition
