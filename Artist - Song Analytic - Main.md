@@ -382,7 +382,13 @@ so that I can understand listening duration patterns and compare performance aga
 
 * AC 3: Main metric displays total hours in large format (e.g., "3.7 H") with prominent styling
 
-* AC 4: Contextual description shows comparison status (e.g., "About the same as usual")
+* AC 4: Contextual description shows comparison status with three possible conditions:
+
+  * "About the same as usual" with green checkmark icon (✓)
+
+  * "Higher than usual" with green upward arrow icon (↑)
+
+  * "Lower than usual" with red downward arrow icon (↓)
 
 * AC 5: Interactive data point displays tooltip on hover showing detailed information:
 
