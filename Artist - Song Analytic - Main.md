@@ -1134,7 +1134,15 @@ so that I can analyze audience sentiment patterns across different demographic s
 
 * AC 17: "Data Analytics" section header displays below performance metrics with clear visual hierarchy
 
-* AC 18: Interactive bar chart visualization displays comprehensive city-based analytics:
+* AC 18: Chart legend displays below "Data Analytics" header with color identification:
+
+  * Pink circle indicator with "Likes" label for likes data representation
+  
+  * Purple circle indicator with "Dislikes" label for dislikes data representation
+  
+  * Legend maintains consistent styling with chart theme and application design
+
+* AC 19: Interactive bar chart visualization displays comprehensive city-based analytics:
 
   * Y-axis scale ranges from 0% to 100% with clear interval markings (0%, 20%, 40%, 60%, 80%, 100%)
   
@@ -1144,7 +1152,7 @@ so that I can analyze audience sentiment patterns across different demographic s
   
   * Chart area uses dark background for optimal data visualization
 
-* AC 19: Dual-color bar chart represents likes vs dislikes data:
+* AC 20: Dual-color bar chart represents likes vs dislikes data:
 
   * Pink/magenta bars represent likes percentage for each city
   
@@ -1152,7 +1160,7 @@ so that I can analyze audience sentiment patterns across different demographic s
   
   * Stacked bar format showing combined 100% for each city location
 
-* AC 20: Interactive tooltip functionality displays detailed information on bar hover:
+* AC 21: Interactive tooltip functionality displays detailed information on bar hover:
 
   * Shows specific engagement counts (e.g., "523 Likes, 124 Dislikes")
   
@@ -1162,15 +1170,15 @@ so that I can analyze audience sentiment patterns across different demographic s
   
   * Tooltip appears with smooth animation and optimal placement
 
-* AC 21: Chart supports interactive hover states for enhanced user engagement and data exploration
+* AC 22: Chart supports interactive hover states for enhanced user engagement and data exploration
 
-* AC 22: All chart elements (axes, grid, bars, labels) use consistent color scheme matching Discovery tab design
+* AC 23: All chart elements (axes, grid, bars, labels) use consistent color scheme matching Discovery tab design
 
-* AC 23: Data visualization accurately reflects audience sentiment patterns across different cities
+* AC 24: Data visualization accurately reflects audience sentiment patterns across different cities
 
-* AC 24: Chart responsive design ensures proper display across different screen sizes and orientations
+* AC 25: Chart responsive design ensures proper display across different screen sizes and orientations
 
-* AC 25: Tab-specific data updates dynamically based on selected navigation tab:
+* AC 26: Tab-specific data updates dynamically based on selected navigation tab:
 
   * Comparison tab: Shows comparative likes/dislikes across songs
   
@@ -1182,21 +1190,21 @@ so that I can analyze audience sentiment patterns across different demographic s
   
   * Source tab: Shows sentiment data by traffic source/platform
 
-* AC 26: All performance data updates dynamically when different songs are selected from header dropdown
+* AC 27: All performance data updates dynamically when different songs are selected from header dropdown
 
-* AC 27: Progress bars automatically refresh to show selected song's current sentiment statistics
+* AC 28: Progress bars automatically refresh to show selected song's current sentiment statistics
 
-* AC 28: Chart loading states display appropriate indicators while sentiment data is being fetched
+* AC 29: Chart loading states display appropriate indicators while sentiment data is being fetched
 
-* AC 29: Error handling provides user-friendly messages if likes/dislikes data cannot be loaded
+* AC 30: Error handling provides user-friendly messages if likes/dislikes data cannot be loaded
 
-* AC 30: All sentiment calculations reflect accurate real-time audience engagement and reaction data
+* AC 31: All sentiment calculations reflect accurate real-time audience engagement and reaction data
 
-* AC 31: Section maintains consistent styling with other Discovery tab components
+* AC 32: Section maintains consistent styling with other Discovery tab components
 
-* AC 32: Likes vs Dislikes section remains accessible and functional only within the Discovery tab context
+* AC 33: Likes vs Dislikes section remains accessible and functional only within the Discovery tab context
 
-* AC 33: Chart maintains accessibility standards with proper contrast ratios and screen reader support
+* AC 34: Chart maintains accessibility standards with proper contrast ratios and screen reader support
 
 ***
 
