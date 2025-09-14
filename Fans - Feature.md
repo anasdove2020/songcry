@@ -18,6 +18,105 @@ so that I can understand what the app is about and feel confident to proceed.
 
 ---
 
+## Page: Set Password
+
+### Task: Create Set Password Page UI
+
+**User Story:**  
+GIVEN user completes Set Username Page,  
+As a new user,  
+I want to see a password setup page  
+so that I can create a secure password for my account.
+
+**Acceptance Criteria:**
+- AC 1: Page displays "Password" title
+- AC 2: Password input field is prominently displayed with placeholder text
+- AC 3: Password requirements text is shown below input field
+- AC 4: Eye icon for show/hide password functionality is available
+- AC 5: Next button is displayed at the bottom
+- AC 6: Navigation back to previous page is available
+
+---
+
+### Task: Handle Password Input Validation
+
+**User Story:**  
+As a new user on Set Password Page,  
+I want to see real-time validation of my password  
+so that I know if my password meets security requirements.
+
+**Acceptance Criteria:**
+- AC 1: Password must be at least 8 characters long
+- AC 2: Password must contain at least one uppercase letter
+- AC 3: Password must contain at least one lowercase letter
+- AC 4: Password must contain at least one number
+- AC 5: Password must contain at least one symbol
+- AC 6: Real-time feedback shows validation status
+- AC 7: Requirements text updates to show which criteria are met
+
+---
+
+### Task: Handle Password Visibility Toggle
+
+**User Story:**  
+As a new user on Set Password Page,  
+I want to toggle password visibility  
+so that I can verify I've typed my password correctly.
+
+**Acceptance Criteria:**
+- AC 1: Eye icon is visible next to password input field
+- AC 2: Clicking eye icon toggles between show/hide password
+- AC 3: Icon changes appearance to indicate current state
+- AC 4: Password field type changes between password and text
+
+---
+
+### Task: Handle Password Error States
+
+**User Story:**  
+As a new user on Set Password Page,  
+I want to see clear error indicators when my password is invalid  
+so that I can understand what needs to be corrected.
+
+**Acceptance Criteria:**
+- AC 1: Input field shows red border when password is invalid
+- AC 2: Error messages are displayed below the input field
+- AC 3: Specific error messages for each validation failure
+- AC 4: Error states clear when password becomes valid
+
+---
+
+### Task: Handle Next Button Click from Set Password Page
+
+**User Story:**  
+As a new user on Set Password Page,  
+I want to click the Next button with a valid password  
+so that I can proceed to Set Account page.
+
+**Acceptance Criteria:**
+- AC 1: Next button is only enabled when password meets all requirements
+- AC 2: Button click saves password securely
+- AC 3: Button click navigates to Set Account page
+- AC 4: Loading state is shown during password processing
+
+---
+
+### Task: Handle Back Navigation from Set Password Page
+
+**User Story:**  
+GIVEN user is on Set Password Page,  
+As a new user,  
+I want to click the back button  
+so that I can return to the Set Username Page.
+
+**Acceptance Criteria:**
+- AC 1: Back button is visible and accessible
+- AC 2: Back button click navigates to Set Username Page
+- AC 3: Previous password input state is cleared for security
+- AC 4: Navigation maintains user's previous input context
+
+---
+
 ### Task: Handle Sign Up Button Click
 
 **User Story:**  
@@ -223,5 +322,119 @@ so that I can proceed to complete my account setup.
 - AC 1: Continue button is only enabled when username is valid
 - AC 2: Button click saves username to user profile
 - AC 3: Button click navigates to next step in onboarding process
+
+---
+
+### Task: Handle Back Navigation from Set Username Page
+
+**User Story:**  
+GIVEN user is on Set Username Page,  
+As a new user,  
+I want to click the back button  
+so that I can return to the Fan Role Confirmation Page.
+
+**Acceptance Criteria:**
+- AC 1: Back button is visible and accessible
+- AC 2: Back button click navigates to Fan Role Confirmation Page
+- AC 3: Previous username input state is cleared
+- AC 4: Navigation maintains user's role selection context
+
+---
+
+## Page: Set Password
+
+### Task: Create Set Password Page UI
+
+**User Story:**  
+GIVEN user completes Set Username,  
+As a new user,  
+I want to see a password setup page  
+so that I can create a secure password for my account.
+
+**Acceptance Criteria:**
+- AC 1: Page displays "Create Account" title
+- AC 2: Password input field with placeholder "Enter password" is displayed
+- AC 3: Password requirements text is shown below input field
+- AC 4: Eye icon for show/hide password functionality is visible
+- AC 5: Next button is prominently displayed
+- AC 6: Navigation back to previous page is available
+
+---
+
+### Task: Handle Password Input Validation
+
+**User Story:**  
+As a new user on Set Password Page,  
+I want to see real-time validation of my password  
+so that I know if my password meets security requirements.
+
+**Acceptance Criteria:**
+- AC 1: Password must be at least 8 characters long
+- AC 2: Password must include uppercase letters
+- AC 3: Password must include lowercase letters
+- AC 4: Password must include numbers
+- AC 5: Password must include symbols
+- AC 6: Real-time feedback shows validation status
+
+---
+
+### Task: Handle Password Visibility Toggle
+
+**User Story:**  
+As a new user on Set Password Page,  
+I want to toggle password visibility  
+so that I can verify what I'm typing.
+
+**Acceptance Criteria:**
+- AC 1: Eye icon is clickable and responsive
+- AC 2: Clicking eye icon shows password in plain text
+- AC 3: Clicking eye icon again hides password
+- AC 4: Icon changes state to indicate current visibility mode
+
+---
+
+### Task: Handle Password Error States
+
+**User Story:**  
+As a new user on Set Password Page,  
+I want to see clear error feedback  
+so that I understand what needs to be corrected in my password.
+
+**Acceptance Criteria:**
+- AC 1: Input field shows red border when password is invalid
+- AC 2: Specific error messages are displayed for each validation rule
+- AC 3: Error messages are clear and actionable
+- AC 4: Error state is cleared when password becomes valid
+
+---
+
+### Task: Handle Next Button Click from Set Password Page
+
+**User Story:**  
+As a new user on Set Password Page,  
+I want to click the next button with a valid password  
+so that I can proceed to set up my account details.
+
+**Acceptance Criteria:**
+- AC 1: Next button is only enabled when password is valid
+- AC 2: Button click saves password securely
+- AC 3: Button click navigates to Set Account page
+- AC 4: Loading state is shown during navigation
+
+---
+
+### Task: Handle Back Navigation from Set Password Page
+
+**User Story:**  
+GIVEN user is on Set Password Page,  
+As a new user,  
+I want to click the back button  
+so that I can return to the Set Username Page.
+
+**Acceptance Criteria:**
+- AC 1: Back button is visible and accessible
+- AC 2: Back button click navigates to Set Username Page
+- AC 3: Previous password input state is cleared for security
+- AC 4: Navigation maintains user's username and role selection context
 
 ---
