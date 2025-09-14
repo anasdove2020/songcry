@@ -2108,3 +2108,105 @@ so that I can analyze which tracks are performing better and make data-driven de
 
 ***
 
+### Task 22: Feed Insights Tab - Similar Song Comparison
+
+**User Story:**
+
+As a user,  
+I want to compare my song's performance with similar songs from other artists in the Feed Insights tab  
+so that I can benchmark my track against comparable content and identify improvement opportunities.
+
+**Acceptance Criteria:**
+
+* AC 1: Similar Song Comparison section displays prominently within Feed Insights tab below Performance Comparison section
+
+* AC 2: Section header shows "Similar Song Comparison" with subtitle "Compare between your song and other artist's song"
+
+* AC 3: Dropdown "Same Genre" is prominently displayed at the top of the section with downward arrow indicator
+
+* AC 4: Clicking dropdown opens bottom sheet titled "Select data filter" with comprehensive filter options:
+
+  * Same Genre (selected by default with pink radio button)
+  
+  * Same City/Region (unselected radio button)
+  
+  * Similar Audience Sizes (unselected radio button)
+  
+  * Similar Engagement Scores (unselected radio button)
+  
+  * Trending at The Same Time (unselected radio button)
+  
+  * Specific Song (unselected radio button with chevron > indicating nested navigation)
+
+* AC 5: Selecting "Specific Song" opens nested bottom sheet titled "Select a song" with search functionality
+
+* AC 6: Nested bottom sheet includes search bar with placeholder "Search for a song or artist"
+
+* AC 7: Song list displays with artist thumbnails, song titles, artist names, and radio button selection
+
+* AC 8: Each nested bottom sheet includes "Apply" button to confirm song selection
+
+* AC 9: Seven horizontal metric buttons display below dropdown with scrollable functionality:
+
+  * Plays (default selected)
+  
+  * Likes
+  
+  * Hosts
+  
+  * Shares
+  
+  * Replay Rate
+  
+  * Follow Conversions
+  
+  * Engagement Score
+
+* AC 10: Only three metric buttons are visible by default with horizontal scrolling to access remaining four
+
+* AC 11: Selected metric button displays with highlighted styling (white background with dark text)
+
+* AC 12: Unselected metric buttons display with dark background and white text
+
+* AC 13: Chart visualization displays comparison between user's song and selected comparison criteria
+
+* AC 14: Chart title updates dynamically based on selected dropdown filter (e.g., "280 Total Plays (March 2025)")
+
+* AC 15: Chart values update dynamically when different metric buttons are clicked
+
+* AC 16: Timeline spans appropriate period with clear month labels for temporal context
+
+* AC 17: Interactive tooltip appears on hover showing detailed metric information
+
+* AC 18: Chart legend clearly distinguishes between "You" and "Similar Song" with different colored lines
+
+* AC 19: Achievement cards section displays below chart with horizontal scrolling functionality
+
+* AC 20: Achievement cards show performance status messages like "Your track is underperforming!"
+
+* AC 21: Each achievement card displays relevant song artwork as background or thumbnail
+
+* AC 22: Achievement cards include descriptive text explaining comparative performance insights
+
+* AC 23: "Manage Feed" button is prominently displayed on achievement cards for feed optimization
+
+* AC 24: Achievement cards support horizontal swiping gesture for navigation between multiple insights
+
+* AC 25: Card navigation includes dot indicators showing total count and current position
+
+* AC 26: Manage Feed functionality provides actionable recommendations for improving song performance
+
+* AC 27: All interactive elements provide visual feedback on tap/click with appropriate animations
+
+* AC 28: Loading states display when fetching comparison data or switching between filters
+
+* AC 29: Error handling displays appropriate messages if comparison data cannot be loaded
+
+* AC 30: Performance metrics update dynamically when different filter options or metric buttons are selected
+
+* AC 31: Responsive design ensures proper display across different screen sizes and orientations
+
+* AC 32: Accessibility compliance includes screen reader support, keyboard navigation, and high contrast mode compatibility
+
+***
+
