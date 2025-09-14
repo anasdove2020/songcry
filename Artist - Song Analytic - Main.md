@@ -4,7 +4,10 @@
 
 ### User Story 1: Header Section
 
-**As a user, I want to see a comprehensive header section so that I can navigate, select songs, and control playback.**
+**User Story:**
+As a user, 
+I want to see a comprehensive header section 
+so that I can navigate, select songs, and control playback.
 
 **Acceptance Criteria:**
 
@@ -58,7 +61,10 @@
 
 ### User Story 2: Time Period Filter Dropdown
 
-**As a user, I want to filter map data by time period so that I can analyze performance for specific timeframes.**
+**User Story:**
+As a user, 
+I want to filter map data by time period 
+so that I can analyze performance for specific timeframes.
 
 **Acceptance Criteria:**
 
@@ -96,7 +102,10 @@
 
 ### User Story 3: Interactive Map Section
 
-**As a user, I want to view an interactive map of the United States so that I can see geographical performance data of my song.**
+**User Story:**
+As a user, 
+I want to view an interactive map of the United States 
+so that I can see geographical performance data of my song.
 
 **Acceptance Criteria:**
 
@@ -162,7 +171,10 @@
 
 ### User Story 4: Tab Navigation System
 
-**As a user, I want to navigate between different analytics views using tabs so that I can access Overview, Discovery, Audience, and Feed Insights data with Overview being the default view.**
+**User Story:**
+As a user, 
+I want to navigate between different analytics views using tabs 
+so that I can access Overview, Discovery, Audience, and Feed Insights data with Overview being the default view.
 
 **Acceptance Criteria:**
 
@@ -196,7 +208,11 @@
 
 ### User Story 5: Song Performance Card Display
 
-**GIVEN that I am viewing the Overview tab, AS a user, I want to see a detailed song performance card so that I can quickly view key metrics and performance indicators for the selected song.**
+**User Story:**
+GIVEN that I am viewing the Overview tab, 
+AS a user, 
+I want to see a detailed song performance card 
+so that I can quickly view key metrics and performance indicators for the selected song.
 
 **Acceptance Criteria:**
 
@@ -232,7 +248,11 @@
 
 ### User Story 6: Song Journey by States
 
-**GIVEN that I am viewing the Overview tab, AS an artist, I want to track my song's journey from initial upload through different US states so that I can understand how my music spreads geographically across state boundaries from the moment it was first uploaded.**
+**User Story:**
+GIVEN that I am viewing the Overview tab, 
+AS an artist, 
+I want to track my song's journey from initial upload through different US states 
+so that I can understand how my music spreads geographically across state boundaries from the moment it was first uploaded.
 
 **Acceptance Criteria:**
 
