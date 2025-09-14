@@ -1387,5 +1387,186 @@ so that I can understand the age distribution of my audience and analyze fan eng
   
   * High contrast mode compatibility
 
+### Task 18: Audience Tab - Gender Demographics Analytics
+
+**User Story:**
+
+GIVEN that I am viewing the Audience tab,  
+AS an artist,  
+I want to see comprehensive gender demographics analytics with horizontal progress bar visualization  
+so that I can understand the gender distribution of my audience and analyze fan engagement patterns across different gender demographics.
+
+**Acceptance Criteria:**
+
+* AC 1: Gender Demographics section displays prominently within the Audience tab interface below Age Demographics section
+
+* AC 2: Section header shows "Gender" with clear visual hierarchy and professional typography
+
+* AC 3: Header section includes info icon (ⓘ) in the top left area for additional information access
+
+* AC 4: Clicking info icon displays tooltip with contextual information about gender analytics (TBD)
+
+* AC 5: Three horizontal progress bars display as primary visualization elements representing gender distribution:
+
+  * Male progress bar with pink/magenta color scheme
+  
+  * Female progress bar with pink/magenta color scheme
+  
+  * Other progress bar with pink/magenta color scheme
+  
+  * All bars maintain consistent styling and visual hierarchy
+
+* AC 6: Male demographics progress bar displays with comprehensive data visualization:
+
+  * Label "Male" positioned on the left side with consistent typography
+  
+  * Progress bar fills to 45% width representing proportional audience share
+  
+  * Right side displays "45% (3.2K)" showing percentage and fan count
+  
+  * Pink/magenta color fill with appropriate opacity and styling
+
+* AC 7: Female demographics progress bar displays with comprehensive data visualization:
+
+  * Label "Female" positioned on the left side with consistent typography
+  
+  * Progress bar fills to 30% width representing proportional audience share
+  
+  * Right side displays "30% (1.2K)" showing percentage and fan count
+  
+  * Pink/magenta color fill with appropriate opacity and styling
+
+* AC 8: Other demographics progress bar displays with comprehensive data visualization:
+
+  * Label "Other" positioned on the left side with consistent typography
+  
+  * Progress bar fills to 8% width representing proportional audience share
+  
+  * Right side displays "8% (24)" showing percentage and fan count
+  
+  * Pink/magenta color fill with appropriate opacity and styling
+
+* AC 9: Progress bar layout maintains consistent spacing and alignment:
+
+  * Equal vertical spacing between each progress bar
+  
+  * Left-aligned gender labels with consistent width allocation
+  
+  * Right-aligned percentage and fan count data
+  
+  * Proper padding and margins for optimal readability
+
+* AC 10: Progress bar visual design follows established UI patterns:
+
+  * Rounded corners for modern aesthetic appeal
+  
+  * Background track in neutral color for unfilled portions
+  
+  * Smooth gradient or solid fill for progress indication
+  
+  * Appropriate height for touch and click interactions
+
+* AC 11: Data formatting displays with consistent number representation:
+
+  * Percentages shown without decimal places for clean presentation
+  
+  * Fan counts use appropriate suffixes (K for thousands)
+  
+  * Parentheses format for fan count display: "(3.2K)"
+  
+  * Consistent spacing between percentage and fan count
+
+* AC 12: Interactive hover states provide enhanced user engagement:
+
+  * Progress bars highlight on mouse hover with subtle animation
+  
+  * Tooltip displays additional demographic information on hover
+  
+  * Smooth transitions between normal and hover states
+  
+  * Visual feedback maintains accessibility standards
+
+* AC 13: All progress bar elements use consistent color scheme matching Audience tab design:
+
+  * Pink/magenta color palette for visual consistency with other sections
+  
+  * Appropriate contrast ratios for accessibility compliance
+  
+  * Professional styling aligned with application theme
+
+* AC 14: Data visualization accurately reflects real-time audience gender distribution:
+
+  * Percentages calculated from actual user demographic data
+  
+  * Fan counts represent verified audience numbers by gender
+  
+  * Data updates reflect current audience composition
+
+* AC 15: Progress bars responsive design ensures proper display across different screen sizes:
+
+  * Bars scale appropriately for mobile and desktop views
+  
+  * Label and data positioning adapts to available screen space
+  
+  * Maintains readability and functionality on all devices
+
+* AC 16: Gender demographics data updates dynamically when different songs are selected from header dropdown:
+
+  * Progress bar fills adjust to reflect selected song's audience
+  
+  * Percentage and fan count values update automatically
+  
+  * Smooth animations during data transitions
+
+* AC 17: Progress bar loading states display appropriate indicators while demographic data is being fetched:
+
+  * Loading animation or skeleton UI during data retrieval
+  
+  * Graceful handling of loading transitions
+  
+  * User feedback during data processing
+
+* AC 18: Error handling provides user-friendly messages if gender demographic data cannot be loaded:
+
+  * Clear error messages for data retrieval failures
+  
+  * Retry mechanisms for temporary connectivity issues
+  
+  * Fallback content when data is unavailable
+
+* AC 19: All demographic calculations reflect accurate real-time audience gender distribution data:
+
+  * Precise percentage calculations with proper rounding
+  
+  * Verified fan count aggregation across gender categories
+  
+  * Data integrity validation and consistency checks
+
+* AC 20: Section maintains consistent styling with other Audience tab components:
+
+  * Typography consistency with tab design standards
+  
+  * Spacing and layout alignment with Age Demographics section
+  
+  * Color scheme integration with overall tab theme
+
+* AC 21: Gender Demographics section remains accessible and functional only within the Audience tab context:
+
+  * Section visibility controlled by tab navigation
+  
+  * Proper component lifecycle management
+  
+  * Tab-specific data loading and cleanup
+
+* AC 22: Progress bars maintain accessibility standards with proper contrast ratios and screen reader support:
+
+  * ARIA labels for progress elements and demographic data
+  
+  * Keyboard navigation support for interactive elements
+  
+  * Screen reader compatible progress descriptions
+  
+  * High contrast mode compatibility
+
 ***
 
