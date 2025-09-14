@@ -493,5 +493,84 @@ so that I can understand listener engagement patterns and identify whether my so
 
 * AC 17: Clicking info icon displays tooltip with contextual information (TBD)
 
+### Task 10: City Performance Analytics
+
+**User Story:**
+
+GIVEN that I am viewing the Overview tab,  
+AS an artist,  
+I want to see detailed analytics about my song's performance across different cities  
+so that I can understand geographic distribution of my audience and identify top-performing locations.
+
+**Acceptance Criteria:**
+
+* AC 1: City Performance section displays below the Plays vs Skip section within the Overview tab
+
+* AC 2: Section header shows "City Performance" with navigational chevron (>) on the right
+
+* AC 3: Clicking the "City Performance" header title navigates to the dedicated City Performance page
+
+* AC 4: Header chevron (>) provides visual indication of navigation capability
+
+* AC 5: Top-right corner displays dropdown filter with default selection "Total Plays"
+
+* AC 6: Dropdown filter shows downward arrow (▼) indicating expandable options
+
+* AC 7: Clicking dropdown filter opens bottom sheet modal with filter options:
+
+  * "Select data filter" header with close (X) button in top-right
+
+  * "Total Fans" option with radio button (unselected by default)
+
+  * "Total Plays" option with radio button (selected by default, pink/magenta)
+
+  * "Apply" button at bottom for confirming selection
+
+* AC 8: Bottom sheet modal uses dark theme with white text for consistency
+
+* AC 9: Radio button selection allows only one option to be active at a time
+
+* AC 10: Clicking "Apply" button closes bottom sheet and updates city performance data
+
+* AC 11: Clicking close (X) button dismisses bottom sheet without applying changes
+
+* AC 12: City ranking list displays top 5 performing cities with following format:
+
+  * Ranking number (#1, #2, #3, #4, #5) in white text
+
+  * City thumbnail image (circular format)
+
+  * City name as primary text (e.g., "New York, NY", "Utah", "Bali", "Los Angeles", "Boston")
+
+  * Subtitle showing "Your Rank • #21" in gray text
+
+  * Green upward arrow (↑) with performance metric (e.g., "4.2K") in green text
+
+* AC 13: Each city list item maintains consistent spacing and alignment
+
+* AC 14: City thumbnails display representative images for each location
+
+* AC 15: Performance metrics (4.2K) reflect the selected filter data (Total Plays or Total Fans)
+
+* AC 16: Green upward arrows indicate positive performance trends
+
+* AC 17: "Your Rank • #21" subtitle provides artist's ranking context within each city
+
+* AC 18: List items support hover states for better user interaction feedback
+
+* AC 19: City performance data updates dynamically when different songs are selected from header dropdown
+
+* AC 20: Filter selection persists during song switching until manually changed
+
+* AC 21: All city data reflects accurate geographic performance metrics
+
+* AC 22: Section maintains consistent styling with other Overview tab components
+
+* AC 23: City Performance section remains accessible and functional only within the Overview tab context
+
+* AC 24: Header section includes info icon in the top left area for additional information access
+
+* AC 25: Clicking info icon displays tooltip with contextual information (TBD)
+
 ***
 
