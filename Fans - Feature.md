@@ -276,59 +276,76 @@ so that I can return to the Choose Role Page.
 
 ---
 
-## Page: Set Username
+## Page: Set Email
 
-### Task: Create Set Username Page UI
+### Task: Create Set Email Page UI
 
 **User Story:**  
 GIVEN user completes Fan Role Confirmation,  
 As a new user,  
-I want to see a username setup page  
-so that I can create a unique username for my account.
+I want to see an email setup page  
+so that I can enter my email address for my account.
 
 **Acceptance Criteria:**
-- AC 1: Page displays "Set Your Username" title
-- AC 2: Username input field is prominently displayed
-- AC 3: Username validation feedback is shown in real-time
-- AC 4: Continue button is available when username is valid
-- AC 5: Navigation back to previous page is available
+- AC 1: Page displays "Create Account" title
+- AC 2: Email input field with placeholder "Enter your email" is prominently displayed
+- AC 3: Next button is available at the bottom of the page
+- AC 4: Navigation back to previous page is available
+- AC 5: Page follows dark theme design as shown in mockup
 
 ---
 
-### Task: Handle Username Input Validation
+### Task: Handle Email Input Validation
 
 **User Story:**  
-As a new user on Set Username Page,  
-I want to see real-time validation of my username  
-so that I know if my chosen username is available and meets requirements.
+As a new user on Set Email Page,  
+I want to see validation of my email address  
+so that I know if my email format is correct and available.
 
 **Acceptance Criteria:**
-- AC 1: Username must be at least 3 characters long
-- AC 2: Username must be unique (not already taken)
-- AC 3: Username can only contain letters, numbers, and underscores
-- AC 4: Real-time feedback shows availability status
-- AC 5: Error messages are clear and helpful
+- AC 1: Email must follow valid email format (contains @ and domain)
+- AC 2: Email validation occurs on input blur or form submission
+- AC 3: Valid email enables the Next button
+- AC 4: Invalid email shows appropriate error feedback
+- AC 5: Email availability is checked against existing accounts
 
 ---
 
-### Task: Handle Continue Button from Set Username Page
+### Task: Handle Email Error States
 
 **User Story:**  
-As a new user on Set Username Page,  
-I want to click the continue button with a valid username  
-so that I can proceed to complete my account setup.
+As a new user on Set Email Page,  
+I want to see clear error feedback  
+so that I understand what needs to be corrected with my email input.
 
 **Acceptance Criteria:**
-- AC 1: Continue button is only enabled when username is valid
-- AC 2: Button click saves username to user profile
-- AC 3: Button click navigates to next step in onboarding process
+- AC 1: Input field shows red border when email is invalid
+- AC 2: Error message "Please enter a valid email address" is displayed for invalid format
+- AC 3: Error message "This email is already connected to a songcry account" is shown for existing emails
+- AC 4: Blue "Check ticket link here" link is displayed for existing account errors
+- AC 5: Error state is cleared when email becomes valid
 
 ---
 
-### Task: Handle Back Navigation from Set Username Page
+### Task: Handle Next Button Click from Set Email Page
 
 **User Story:**  
-GIVEN user is on Set Username Page,  
+As a new user on Set Email Page,  
+I want to click the next button with a valid email  
+so that I can proceed to set up my password.
+
+**Acceptance Criteria:**
+- AC 1: Next button is only enabled when email is valid and available
+- AC 2: Button click saves email to user profile
+- AC 3: Button click navigates to Set Password page
+- AC 4: Loading state is shown during navigation
+
+---
+
+### Task: Handle Back Navigation from Set Email Page
+
+**User Story:**  
+GIVEN user is on Set Email Page,  
 As a new user,  
 I want to click the back button  
 so that I can return to the Fan Role Confirmation Page.
@@ -336,7 +353,7 @@ so that I can return to the Fan Role Confirmation Page.
 **Acceptance Criteria:**
 - AC 1: Back button is visible and accessible
 - AC 2: Back button click navigates to Fan Role Confirmation Page
-- AC 3: Previous username input state is cleared
+- AC 3: Previous email input state is maintained
 - AC 4: Navigation maintains user's role selection context
 
 ---
@@ -346,7 +363,7 @@ so that I can return to the Fan Role Confirmation Page.
 ### Task: Create Set Password Page UI
 
 **User Story:**  
-GIVEN user completes Set Username,  
+GIVEN user completes Set Email,  
 As a new user,  
 I want to see a password setup page  
 so that I can create a secure password for my account.
@@ -429,12 +446,12 @@ so that I can proceed to set up my account details.
 GIVEN user is on Set Password Page,  
 As a new user,  
 I want to click the back button  
-so that I can return to the Set Username Page.
+so that I can return to the Set Email Page.
 
 **Acceptance Criteria:**
 - AC 1: Back button is visible and accessible
-- AC 2: Back button click navigates to Set Username Page
+- AC 2: Back button click navigates to Set Email Page
 - AC 3: Previous password input state is cleared for security
-- AC 4: Navigation maintains user's username and role selection context
+- AC 4: Navigation maintains user's email and role selection context
 
 ---
