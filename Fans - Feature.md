@@ -653,3 +653,150 @@ so that users can register with email, password, username, and profile picture.
 - AC 13: Log account creation events for analytics and security
 
 ---
+
+## Page: Set Date of Birth
+
+### Task: Create Set Date of Birth Page UI
+
+**User Story:**  
+As a new user,  
+I want to see a clean date of birth input interface  
+so that I can easily enter my birth date to complete my profile setup.
+
+**Acceptance Criteria:**
+- AC 1: Page displays "Set Up Profile" header with back button
+- AC 2: "Date of Birth" label is clearly visible
+- AC 3: Input field with placeholder "Enter your date of birth" is prominently displayed
+- AC 4: Calendar icon is visible next to the input field
+- AC 5: Date picker interface appears when input field is tapped
+- AC 6: Next button is displayed at the bottom of the screen
+- AC 7: Date picker shows Cancel and Done buttons
+- AC 8: Month, day, and year selection wheels are available in date picker
+
+---
+
+### Task: Handle Date Input Validation
+
+**User Story:**  
+As a new user on Set Date of Birth Page,  
+I want to receive clear feedback about my date input  
+so that I know if my birth date is valid and acceptable.
+
+**Acceptance Criteria:**
+- AC 1: Display error message for invalid date formats
+- AC 2: Validate that selected date is not in the future
+- AC 3: Show error for dates that would make user under 13 years old
+- AC 4: Input field shows red border when validation fails
+- AC 5: Error messages appear below the input field
+- AC 6: Error states clear when valid date is entered
+- AC 7: Real-time validation as user types or selects date
+
+---
+
+### Task: Handle Date Picker Interaction
+
+**User Story:**  
+As a new user on Set Date of Birth Page,  
+I want to easily select my birth date using the date picker  
+so that I can quickly and accurately enter my information.
+
+**Acceptance Criteria:**
+- AC 1: Date picker opens when input field is tapped
+- AC 2: Date picker opens when calendar icon is tapped
+- AC 3: Month, day, and year wheels scroll smoothly
+- AC 4: Done button applies selected date to input field
+- AC 5: Cancel button closes picker without applying changes
+- AC 6: Date picker closes automatically after Done is pressed
+- AC 7: Selected date is formatted properly in input field (MM/DD/YYYY)
+- AC 8: Date picker shows current date as default selection
+
+---
+
+### Task: Handle Next Button Click
+
+**User Story:**  
+As a new user on Set Date of Birth Page,  
+I want to click Next with a valid birth date  
+so that I can proceed to set my hometown information.
+
+**Acceptance Criteria:**
+- AC 1: Next button is only enabled when valid date is entered
+- AC 2: Button click saves birth date to user profile
+- AC 3: Button click navigates to Set Hometown page
+- AC 4: Loading state with spinner is shown during processing
+- AC 5: Error handling for date saving failures
+- AC 6: Button remains disabled for invalid or empty dates
+
+---
+
+### Task: Handle Back Navigation from Set Date of Birth Page
+
+**User Story:**  
+GIVEN user is on Set Date of Birth Page,  
+As a new user,  
+I want to click the back button  
+so that I can return to the login page since my account is already created.
+
+**Acceptance Criteria:**
+- AC 1: Back button is visible and accessible
+- AC 2: Back button click navigates to Login Page
+- AC 3: User session is maintained for future login
+- AC 4: Previous date input state is not preserved (account already created)
+- AC 5: Navigation shows appropriate transition animation
+
+---
+
+### Task: Handle Date Format Validation
+
+**User Story:**  
+As a new user on Set Date of Birth Page,  
+I want to see consistent date formatting  
+so that I understand the expected date format and can enter it correctly.
+
+**Acceptance Criteria:**
+- AC 1: Input field accepts MM/DD/YYYY format
+- AC 2: Auto-format date as user types (add slashes automatically)
+- AC 3: Display helper text showing expected format below input
+- AC 4: Handle various input formats and convert to standard format
+- AC 5: Show format error for completely invalid date strings
+- AC 6: Clear formatting when input field is cleared
+
+---
+
+### Task: Handle Age Restriction Validation
+
+**User Story:**  
+As a platform administrator,  
+I want to ensure users meet minimum age requirements  
+so that the platform complies with legal age restrictions.
+
+**Acceptance Criteria:**
+- AC 1: Calculate age based on entered birth date
+- AC 2: Display error message for users under 13 years old
+- AC 3: Show specific error: "You must be at least 13 years old to create an account"
+- AC 4: Prevent form submission for underage users
+- AC 5: Age calculation accounts for leap years and current date
+- AC 6: Error message includes link to parental consent information
+
+---
+
+### Task: Create Date Validation API Endpoint
+
+**User Story:**  
+As a backend developer,  
+I want to create an API endpoint for date validation and age verification  
+so that the frontend can validate birth dates and ensure compliance with age restrictions.
+
+**Acceptance Criteria:**
+- AC 1: Create POST endpoint `/api/auth/validate-birthdate` for date validation
+- AC 2: Endpoint validates date format and checks if date is valid
+- AC 3: Calculate and verify minimum age requirement (13 years)
+- AC 4: Return HTTP 200 status code for valid dates meeting age requirements
+- AC 5: Return HTTP 400 status code for invalid date formats
+- AC 6: Return HTTP 403 status code for dates not meeting age requirements
+- AC 7: Response includes JSON format with validation status and error messages
+- AC 8: Implement proper error handling for date calculation edge cases
+- AC 9: Log age verification attempts for compliance monitoring
+- AC 10: Rate limiting to prevent automated age verification attacks
+
+---
