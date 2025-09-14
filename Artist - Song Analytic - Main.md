@@ -238,7 +238,7 @@
 
 * AC 1: Song journey section displays below the song performance card within the Overview tab
 
-*- AC 2: Section header shows "\[Song Title] Journey" where the song title dynamically changes based on the artist's selected song (e.g., "La La Lost You Journey" when "La La Lost You" is selected), indicating the song's state-by-state progression
+* AC 2: Section header shows "\[Song Title] Journey" where the song title dynamically changes based on the artist's selected song (e.g., "La La Lost You Journey" when "La La Lost You" is selected), indicating the song's state-by-state progression
 
 * AC 3: Two clickable tabs are available: "Song Journey" and "State Reach Over Time"
 
