@@ -732,9 +732,15 @@ so that I can understand which fans are actively hosting my songs and driving co
 
   * Subtitle showing "Fan Rank • #21" in gray text indicating fan's ranking position
 
-  * Green upward arrow (↑) indicators showing positive performance trends
+  * Ranking status indicators with performance metrics:
 
-  * Performance metric display (e.g., "4K") with corresponding green color coding
+    * Green upward arrow (↑): Indicates host moved up in ranking from previous period
+
+    * Red downward arrow (↓): Indicates host moved down in ranking from previous period
+
+    * "NEW" badge: Indicates host is newly entered into top 5 leaderboard
+
+  * Performance metric display (e.g., "4K") with corresponding color coding based on ranking status
 
 * AC 13: Each fan/host list item (grid row) is fully clickable and navigates to individual fan profile page
 
@@ -748,7 +754,7 @@ so that I can understand which fans are actively hosting my songs and driving co
 
 * AC 18: Performance metrics (4K) reflect the selected filter data (Total Plays, Total Plays Generated, etc.)
 
-* AC 19: Green upward arrows consistently indicate positive hosting performance trends
+* AC 19: Ranking status indicators consistently reflect hosting performance trends and position changes
 
 * AC 20: List items support hover states for better user interaction feedback and clickability indication
 
