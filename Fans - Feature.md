@@ -358,6 +358,25 @@ so that I can return to the Fan Role Confirmation Page.
 
 ---
 
+### Task: Create Email Validation API Endpoint
+
+**User Story:**  
+As a backend developer,  
+I want to create an API endpoint for email validation  
+so that the frontend can validate email format and check for duplicates during user registration.
+
+**Acceptance Criteria:**
+- AC 1: Create POST endpoint `/api/auth/validate-email` for email validation
+- AC 2: Endpoint validates email format using proper regex pattern
+- AC 3: Endpoint checks for duplicate emails in the database
+- AC 4: Return HTTP 200 status code for valid and available emails
+- AC 5: Return HTTP 400 status code for invalid email format
+- AC 6: Return HTTP 409 status code for emails that already exist
+- AC 7: Response includes JSON format with validation status and error messages
+- AC 8: Implement proper error handling for database connection issues
+
+---
+
 ## Page: Set Password
 
 ### Task: Create Set Password Page UI
