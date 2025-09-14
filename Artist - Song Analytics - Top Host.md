@@ -2,124 +2,85 @@
 
 ## Page: Top Host
 
-### General Information
-The Top Host page displays a comprehensive ranking system for hosts based on their performance metrics. This page provides detailed analytics for host rankings with real-time data updates, allowing users to track performance changes over time. Users can filter data by different metrics (Total Fans, Total Plays), search for specific hosts, and monitor ranking movements with clear visual indicators for improved, declined, or new entries in the leaderboard.
+### Task 1: Header Section
 
-### Task 1: Top Host Ranking Dashboard
+**User Story:**  
+As an artist or content manager, I want to see a clear page header with navigation controls  
+so that I can easily identify the current page and navigate back to the main song analytics page.
 
-#### User Story
-As an artist or content manager, I want to view a comprehensive ranking of top hosts for my songs so that I can:
-- Track which hosts are performing best with my content
-- Monitor ranking changes over time (up, down, new entries)
-- Search for specific hosts quickly
-- Filter rankings by different metrics (Total Fans vs Total Plays)
-- Navigate easily back to the main song analytics page
-- Understand my current position in the ranking system through visual scroll indicators
+**Acceptance Criteria:**
 
-#### UI Components
+* AC 1: Back button is prominently displayed in the top-left corner of the header
+* AC 2: Back button successfully navigates to Song Analytics Main page with smooth page transition
+* AC 3: Page title "Top Host" is clearly displayed in the center of the header
+* AC 4: Header maintains consistent styling with the app's design system
+* AC 5: Bottom navigation remains functional and highlights Analytics tab correctly
+* AC 6: Header is fixed at the top during scrolling for consistent navigation access
+* AC 7: Touch target for back button meets minimum size requirements (44px)
+* AC 8: Header adapts properly to different screen orientations and sizes
 
-**Header Section:**
-- Back button (arrow left icon) for navigation to Song Analytics Main page
-- Page title "Top Hosts" centered
-- Status bar with time, signal, and battery indicators
+### Task 2: Search and Filter Section
 
-**Search and Filter Section:**
-- Search bar with magnifying glass icon and "Search" placeholder text
-- "Total Plays" dropdown button with down arrow icon
-- When dropdown is clicked, opens bottom sheet with filter options:
-  - "Total Fans" option with radio button
-  - "Total Plays" option with radio button (default selected)
-  - "Apply" button at bottom
+**User Story:**  
+As an artist or content manager, I want to search for specific hosts and filter the ranking by different metrics  
+so that I can quickly find relevant hosts and view rankings based on my preferred criteria.
 
-**Ranking List Section:**
-- Scrollable vertical list of host entries
-- Each entry contains:
-  - Ranking number (#1, #2, etc.) on the left
-  - Status indicator (green up arrow, red down arrow, or "NEW" badge)
-  - Host profile picture (circular)
-  - Host username (@aliflkpd format)
-  - Fan rank information ("Fan Rank • #21")
-  - Performance metric on the right ("4K" with green color)
+**Acceptance Criteria:**
 
-**Navigation Section:**
-- Bottom navigation bar with Home, Inbox, Plus, Analytics, and Profile tabs
-- Analytics tab highlighted as active
-- Notification badges on Inbox and Analytics tabs
+* AC 1: Search bar is prominently displayed below the header section
+* AC 2: Search bar accepts text input for host usernames with placeholder text
+* AC 3: Search filters the ranking list in real-time as user types
+* AC 4: Search is case-insensitive and supports partial matches
+* AC 5: Clear search button (X) resets search and shows full list
+* AC 6: "Total Plays" dropdown button is displayed next to search bar
+* AC 7: Dropdown opens bottom sheet overlay with filter options
+* AC 8: Bottom sheet contains "Total Fans" and "Total Plays" radio button options
+* AC 9: Only one filter option can be selected at a time
+* AC 10: "Apply" button applies selected filter and closes bottom sheet
+* AC 11: "Cancel" button closes bottom sheet without applying changes
+* AC 12: Current selected filter is indicated on the dropdown button
 
-**Scroll Indicator:**
-- Horizontal scroll bar at bottom when scrolling to show current position
-- Visual feedback for user orientation within the list
+### Task 3: Host Ranking List
 
-#### Acceptance Criteria
+**User Story:**  
+As an artist or content manager, I want to view a scrollable ranking list of hosts with status indicators  
+so that I can see performance rankings and track changes in host performance over time.
 
-1. **Navigation Functionality**
-   - Back button successfully navigates to Song Analytics Main page
-   - Page transition is smooth and maintains app state
-   - Bottom navigation remains functional and highlights Analytics tab
+**Acceptance Criteria:**
 
-2. **Search Functionality**
-   - Search bar accepts text input for host usernames
-   - Search results filter the ranking list in real-time
-   - Search is case-insensitive and supports partial matches
-   - Clear search functionality resets to full list
+* AC 1: All hosts are displayed in descending order by selected metric
+* AC 2: Each host entry shows rank number (#1, #2, #3, etc.)
+* AC 3: Green up arrow (↑) displays for hosts with improved ranking
+* AC 4: Red down arrow (↓) displays for hosts with declined ranking
+* AC 5: "NEW" badge displays for newly entered hosts
+* AC 6: Status indicators are clearly visible and color-coded appropriately
+* AC 7: List supports smooth vertical scrolling
+* AC 8: Minimum 10 host entries are visible for comprehensive ranking view
+* AC 9: Horizontal scroll bar appears during vertical scrolling
+* AC 10: Scroll bar accurately represents current position in the list
+* AC 11: Scroll bar fades out after scrolling stops
+* AC 12: Ties in metrics maintain consistent ranking order
+* AC 13: Real-time updates reflect current performance data every 30 seconds
+* AC 14: Smooth scrolling performance with no lag
+* AC 15: Empty state display when no hosts match search criteria
 
-3. **Filter Dropdown Functionality**
-   - "Total Plays" dropdown opens bottom sheet overlay
-   - Bottom sheet contains "Total Fans" and "Total Plays" radio options
-   - Only one option can be selected at a time
-   - "Apply" button applies the selected filter and closes bottom sheet
-   - Filter changes re-sort the entire ranking list accordingly
+### Task 4: Host Detail Data
 
-4. **Ranking List Display**
-   - All hosts are displayed in descending order by selected metric
-   - Each entry shows complete information: rank, status, profile, username, fan rank, metric value
-   - List supports smooth vertical scrolling
-   - Minimum 10 host entries visible for comprehensive ranking view
+**User Story:**  
+As an artist or content manager, I want to see detailed information for each host in the ranking list  
+so that I can understand their profile, performance metrics, and fan engagement levels.
 
-5. **Status Indicator System**
-   - Green up arrow (↑) displays for hosts with improved ranking
-   - Red down arrow (↓) displays for hosts with declined ranking
-   - "NEW" badge displays for hosts newly entered in leaderboard
-   - Status indicators are clearly visible and color-coded appropriately
+**Acceptance Criteria:**
 
-6. **Ranking Logic**
-   - Hosts are sorted by highest performance metric first
-   - Ranking numbers are sequential (#1, #2, #3, etc.)
-   - Ties in metrics maintain consistent ranking order
-   - Real-time updates reflect current performance data
-
-7. **Scroll Position Indicator**
-   - Horizontal scroll bar appears during vertical scrolling
-   - Scroll bar accurately represents current position in the list
-   - Scroll bar fades out after scrolling stops
-   - Visual feedback helps users understand list length and current position
-
-8. **Performance and Data**
-   - Page loads within 2 seconds with cached data
-   - Real-time updates occur every 30 seconds
-   - Smooth scrolling performance with no lag
-   - Accurate metric calculations and ranking updates
-
-9. **Visual Design**
-   - Dark theme consistency with app design
-   - Proper spacing and alignment for all elements
-   - Clear typography hierarchy for readability
-   - Appropriate color coding for status indicators
-
-10. **Responsive Behavior**
-    - Layout adapts to different screen orientations
-    - Touch targets meet minimum size requirements (44px)
-    - Smooth animations for state changes
-    - Proper handling of long usernames with ellipsis
-
-11. **Error Handling**
-    - Graceful handling of network connectivity issues
-    - Loading states during data fetch operations
-    - Empty state display when no hosts match search criteria
-    - Error messages for failed filter applications
-
-12. **Accessibility**
-    - Screen reader support for all interactive elements
-    - Proper contrast ratios for text and background
-    - Keyboard navigation support where applicable
-    - Voice-over descriptions for status indicators
+* AC 1: Each host entry displays profile picture or avatar
+* AC 2: Host username is clearly displayed and readable
+* AC 3: Fan rank information is shown for each host
+* AC 4: Current metric value (Total Plays or Total Fans) is prominently displayed
+* AC 5: Long usernames are handled with ellipsis to prevent layout breaking
+* AC 6: Profile pictures load efficiently with placeholder during loading
+* AC 7: All text maintains proper contrast ratios for readability
+* AC 8: Host information is properly aligned and spaced
+* AC 9: Data updates reflect accurate metric calculations
+* AC 10: Loading states are shown during data fetch operations
+* AC 11: Error handling for missing or failed data loads
+* AC 12: Consistent typography hierarchy for all host information
