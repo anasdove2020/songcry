@@ -367,12 +367,193 @@ so that I can proceed to Set Account page.
 GIVEN user is on Set Password Page,  
 As a new user,  
 I want to click the back button  
-so that I can return to the Set Username Page.
+so that I can return to the Set Email Page.
 
 **Acceptance Criteria:**
 - AC 1: Back button is visible and accessible
-- AC 2: Back button click navigates to Set Username Page
+- AC 2: Back button click navigates to Set Email Page
 - AC 3: Previous password input state is cleared for security
 - AC 4: Navigation maintains user's previous input context
+
+---
+
+## Page: Set Username
+
+### Task: Create Set Username Page UI
+
+**User Story:**  
+GIVEN user completes Set Password Page,  
+As a new user,  
+I want to see a username setup page  
+so that I can create a unique username for my account.
+
+**Acceptance Criteria:**
+- AC 1: Page displays "Create Account" header with back button
+- AC 2: Profile picture upload section with placeholder and '+' button is displayed
+- AC 3: Username input field with placeholder "Enter your username" is prominently displayed
+- AC 4: Informational text about username visibility is shown
+- AC 5: Terms of Use and Privacy Policy links are available
+- AC 6: Marketing consent checkbox is displayed
+- AC 7: "Create Account" button is available at the bottom
+- AC 8: Page follows dark theme design as shown in mockup
+
+---
+
+### Task: Handle Username Input Validation
+
+**User Story:**  
+As a new user on Set Username Page,  
+I want to see real-time validation of my username  
+so that I know if my username is available and meets requirements.
+
+**Acceptance Criteria:**
+- AC 1: Username must be at least 3 characters long
+- AC 2: Username must not exceed 20 characters
+- AC 3: Username can only contain letters, numbers, and underscores
+- AC 4: Username must be unique (not already taken)
+- AC 5: Real-time validation occurs on input change
+- AC 6: Valid username enables the Create Account button
+- AC 7: Username availability is checked against existing accounts
+
+---
+
+### Task: Handle Username Error States
+
+**User Story:**  
+As a new user on Set Username Page,  
+I want to see clear error feedback for username issues  
+so that I understand what needs to be corrected.
+
+**Acceptance Criteria:**
+- AC 1: Input field shows red border when username is invalid
+- AC 2: Error message "Username is already taken" for existing usernames
+- AC 3: Error message "Username contains inappropriate words" for blocked content
+- AC 4: Error message "Username can only contain letters, numbers, and underscores" for invalid characters
+- AC 5: Username suggestions are provided when username is taken
+- AC 6: Error states clear when username becomes valid
+
+---
+
+### Task: Handle Profile Picture Upload
+
+**User Story:**  
+As a new user on Set Username Page,  
+I want to upload a profile picture  
+so that I can personalize my account.
+
+**Acceptance Criteria:**
+- AC 1: Profile picture placeholder is displayed with '+' button
+- AC 2: Clicking '+' button opens file selection dialog
+- AC 3: Only image files (jpg, png, gif) are accepted
+- AC 4: Image preview is shown after selection
+- AC 5: File size limit of 5MB is enforced
+- AC 6: Error message for invalid file types or size
+
+---
+
+### Task: Handle Terms and Privacy Consent
+
+**User Story:**  
+As a new user on Set Username Page,  
+I want to review and accept terms and privacy policy  
+so that I can complete my account creation.
+
+**Acceptance Criteria:**
+- AC 1: "Terms of Use" link opens terms document
+- AC 2: "Privacy Policy" link opens privacy document
+- AC 3: Marketing consent checkbox is optional
+- AC 4: Links open in new tab/window
+- AC 5: Consent state is tracked for account creation
+
+---
+
+### Task: Handle Create Account Button Click
+
+**User Story:**  
+As a new user on Set Username Page,  
+I want to click Create Account with valid inputs  
+so that I can proceed to set my date of birth.
+
+**Acceptance Criteria:**
+- AC 1: Create Account button is only enabled when username is valid
+- AC 2: Button click saves username and profile picture
+- AC 3: Button click navigates to Set Date of Birth page
+- AC 4: Loading state with spinner is shown during processing
+- AC 5: Error handling for account creation failures
+
+---
+
+### Task: Handle Back Navigation from Set Username Page
+
+**User Story:**  
+GIVEN user is on Set Username Page,  
+As a new user,  
+I want to click the back button  
+so that I can return to the Set Password Page.
+
+**Acceptance Criteria:**
+- AC 1: Back button is visible and accessible
+- AC 2: Back button click navigates to Set Password Page
+- AC 3: Previous username input state is maintained
+- AC 4: Profile picture selection is preserved
+- AC 5: Navigation maintains user's previous input context
+
+---
+
+### Task: Handle Username Loading States
+
+**User Story:**  
+As a new user on Set Username Page,  
+I want to see loading indicators during username validation  
+so that I know the system is processing my input.
+
+**Acceptance Criteria:**
+- AC 1: Loading spinner appears during username availability check
+- AC 2: Input field shows loading state during validation
+- AC 3: Create Account button shows loading state during submission
+- AC 4: Loading states prevent multiple simultaneous requests
+- AC 5: Timeout handling for slow network responses
+
+---
+
+### Task: Create Username Validation API Endpoint
+
+**User Story:**  
+As a backend developer,  
+I want to create an API endpoint for username validation  
+so that the frontend can validate username availability and format during user registration.
+
+**Acceptance Criteria:**
+- AC 1: Create POST endpoint `/api/auth/validate-username` for username validation
+- AC 2: Endpoint validates username format (3-20 chars, alphanumeric + underscore)
+- AC 3: Endpoint checks for duplicate usernames in the database
+- AC 4: Endpoint filters inappropriate words using content moderation
+- AC 5: Return HTTP 200 status code for valid and available usernames
+- AC 6: Return HTTP 400 status code for invalid username format
+- AC 7: Return HTTP 409 status code for usernames that already exist
+- AC 8: Response includes JSON format with validation status, error messages, and username suggestions
+- AC 9: Implement proper error handling for database connection issues
+- AC 10: Rate limiting to prevent username enumeration attacks
+
+---
+
+### Task: Create Profile Picture Upload API Endpoint
+
+**User Story:**  
+As a backend developer,  
+I want to create an API endpoint for profile picture upload  
+so that users can upload and store their profile images during registration.
+
+**Acceptance Criteria:**
+- AC 1: Create POST endpoint `/api/auth/upload-profile-picture` for image upload
+- AC 2: Endpoint accepts multipart/form-data with image file
+- AC 3: Validate file type (jpg, png, gif) and size (max 5MB)
+- AC 4: Generate unique filename to prevent conflicts
+- AC 5: Store image in secure cloud storage or local directory
+- AC 6: Return HTTP 200 with image URL for successful uploads
+- AC 7: Return HTTP 400 for invalid file type or size
+- AC 8: Implement image optimization and resizing
+- AC 9: Proper error handling for storage failures
+- AC 10: Security measures to prevent malicious file uploads
 
 ---
