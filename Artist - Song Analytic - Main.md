@@ -1206,5 +1206,186 @@ so that I can analyze audience sentiment patterns across different demographic s
 
 * AC 34: Chart maintains accessibility standards with proper contrast ratios and screen reader support
 
+### Task 17: Audience Tab - Age Demographics Analytics
+
+**User Story:**
+
+GIVEN that I am viewing the Audience tab,  
+AS an artist,  
+I want to see comprehensive age demographics analytics with interactive donut chart visualization  
+so that I can understand the age distribution of my audience and analyze fan engagement patterns across different age groups.
+
+**Acceptance Criteria:**
+
+* AC 1: Age Demographics section displays prominently within the Audience tab interface
+
+* AC 2: Section header shows "Age" with clear visual hierarchy and professional typography
+
+* AC 3: Header section includes info icon (ⓘ) in the top left area for additional information access
+
+* AC 4: Clicking info icon displays tooltip with contextual information (TBD)
+
+* AC 5: Interactive donut chart displays as the primary visualization element with comprehensive age segmentation:
+
+  * Chart uses circular donut format with hollow center for modern aesthetic
+  
+  * Multiple color-coded segments represent different age groups
+  
+  * Smooth gradient transitions between segments for visual appeal
+  
+  * Chart maintains responsive design across different screen sizes
+
+* AC 6: Age group segmentation displays five distinct demographic categories:
+
+  * <18: Represents users under 18 years old with light pink color coding
+  
+  * 18-24: Represents young adult demographic with medium pink color coding
+  
+  * 25-35: Represents adult demographic with magenta color coding
+  
+  * 45-54: Represents middle-aged demographic with dark pink color coding
+  
+  * 55+: Represents senior demographic with light purple color coding
+
+* AC 7: Each donut segment accurately represents proportional percentage of total audience:
+
+  * Segment size visually corresponds to actual percentage data
+  
+  * Largest segment (45%) uses darkest color for visual prominence
+  
+  * Smaller segments maintain clear visibility and distinction
+  
+  * All segments combine to represent 100% of total audience
+
+* AC 8: Interactive tooltip functionality displays detailed information on segment hover:
+
+  * Shows specific percentage with one decimal precision (e.g., "45%")
+  
+  * Displays total fan count with formatted numbers (e.g., "3.2K Fans")
+  
+  * Uses white background with rounded corners and proper positioning
+  
+  * Tooltip appears with smooth animation and optimal placement
+  
+  * Color indicator matches corresponding donut segment for visual consistency
+
+* AC 9: Tooltip content format displays as: "[Percentage]% ([Fan Count] Fans)" (e.g., "45% (3.2K Fans)")
+
+* AC 10: Legend section displays on the right side of donut chart with comprehensive age breakdown:
+
+  * Color-coded circular indicators match corresponding donut segments
+  
+  * Age range labels clearly identify each demographic group
+  
+  * Percentage values display with consistent formatting
+  
+  * Fan count numbers show in parentheses with appropriate suffixes (K for thousands)
+  
+  * Proper spacing and alignment for optimal readability
+
+* AC 11: Legend data displays in descending order by percentage for logical hierarchy:
+
+  * <18: 45% (3.2K) with light pink indicator
+  
+  * 18-24: 30% (1K) with medium pink indicator
+  
+  * 25-35: 12% (329) with magenta indicator
+  
+  * 45-54: 8% (24) with dark pink indicator
+  
+  * 55+: 5% (5) with light purple indicator
+
+* AC 12: Chart supports interactive hover states for enhanced user engagement:
+
+  * Segment highlighting on mouse hover with subtle animation
+  
+  * Corresponding legend item highlighting when segment is hovered
+  
+  * Smooth transitions between hover states
+  
+  * Visual feedback maintains accessibility standards
+
+* AC 13: All chart elements use consistent color scheme matching Audience tab design:
+
+  * Pink/magenta color palette for visual consistency
+  
+  * Appropriate contrast ratios for accessibility compliance
+  
+  * Professional styling aligned with application theme
+
+* AC 14: Data visualization accurately reflects real-time audience demographic distribution:
+
+  * Percentages calculated from actual user data
+  
+  * Fan counts represent verified audience numbers
+  
+  * Data updates reflect current audience composition
+
+* AC 15: Chart responsive design ensures proper display across different screen sizes and orientations:
+
+  * Donut chart scales appropriately for mobile and desktop views
+  
+  * Legend positioning adapts to available screen space
+  
+  * Tooltip placement adjusts to prevent overflow
+
+* AC 16: Age demographics data updates dynamically when different songs are selected from header dropdown:
+
+  * Chart segments adjust to reflect selected song's audience
+  
+  * Legend percentages and counts update automatically
+  
+  * Smooth transitions during data updates
+
+* AC 17: Chart loading states display appropriate indicators while demographic data is being fetched:
+
+  * Loading spinner or skeleton UI during data retrieval
+  
+  * Graceful handling of loading transitions
+  
+  * User feedback during data processing
+
+* AC 18: Error handling provides user-friendly messages if age demographic data cannot be loaded:
+
+  * Clear error messages for data retrieval failures
+  
+  * Retry mechanisms for temporary connectivity issues
+  
+  * Fallback content when data is unavailable
+
+* AC 19: All demographic calculations reflect accurate real-time audience age distribution data:
+
+  * Precise percentage calculations with proper rounding
+  
+  * Verified fan count aggregation across age groups
+  
+  * Data integrity validation and consistency checks
+
+* AC 20: Section maintains consistent styling with other Audience tab components:
+
+  * Typography consistency with tab design standards
+  
+  * Spacing and layout alignment with other sections
+  
+  * Color scheme integration with overall tab theme
+
+* AC 21: Age Demographics section remains accessible and functional only within the Audience tab context:
+
+  * Section visibility controlled by tab navigation
+  
+  * Proper component lifecycle management
+  
+  * Tab-specific data loading and cleanup
+
+* AC 22: Chart maintains accessibility standards with proper contrast ratios and screen reader support:
+
+  * ARIA labels for chart elements and data points
+  
+  * Keyboard navigation support for interactive elements
+  
+  * Screen reader compatible data descriptions
+  
+  * High contrast mode compatibility
+
 ***
 
