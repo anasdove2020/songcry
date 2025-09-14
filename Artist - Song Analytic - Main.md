@@ -5,8 +5,8 @@
 ### User Story 1: Header Section
 
 **User Story:**
-As a user,
-I want to see a comprehensive header section 
+As a user,  
+I want to see a comprehensive header section  
 so that I can navigate, select songs, and control playback.
 
 **Acceptance Criteria:**
