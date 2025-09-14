@@ -6,8 +6,7 @@
 
 ---
 
-**Title:**  
-Create On Boarding Page UI
+#### Create On Boarding Page UI
 
 **User Story:**  
 As a new user,  
@@ -23,8 +22,7 @@ so that I can understand what the app is about and feel confident to proceed.
 
 ---
 
-**Title:**  
-Handle Sign Up Button Click
+#### Handle Sign Up Button Click
 
 **User Story:**  
 As a new user,  
@@ -50,8 +48,7 @@ so that I can quickly create an account without manual registration.
 
 ---
 
-**Title:**  
-Handle Facebook Sign Up Button
+#### Handle Facebook Sign Up Button
 
 **User Story:**  
 As a new user,  
