@@ -210,7 +210,7 @@ so that I can access Overview, Discovery, Audience, and Feed Insights data with 
 
 * AC 10: Default Overview tab loads all associated content including map, statistics, and performance data
 
-### Task 5: Overview - Song Performance Card Display
+### Task 5: Overview Tab - Song Performance Card Display
 
 **User Story:**
 
@@ -251,7 +251,7 @@ so that I can quickly view key metrics and performance indicators for the select
 
 * AC 15: Performance indicators (arrows and numbers) reflect real-time data accuracy
 
-### Task 6: Overview - Song Journey by States
+### Task 6: Overview Tab - Song Journey by States
 
 **User Story:**
 
@@ -316,7 +316,7 @@ so that I can understand how my music spreads geographically across state bounda
 
 * AC 17: Clicking info icon displays tooltip with contextual information (TBD)
 
-### Task 7: Overview - Play Sources Analytics
+### Task 7: Overview Tab - Play Sources Analytics
 
 **User Story:**
 
@@ -365,7 +365,7 @@ so that I can understand which platforms and sources are driving the most engage
 
 * AC 15: Clicking info icon displays tooltip with contextual information (TBD)
 
-### Task 8: Overview - Amount of Time Played Analytics
+### Task 8: Overview Tab - Amount of Time Played Analytics
 
 **User Story:**
 
@@ -436,7 +436,7 @@ so that I can understand listening duration patterns and compare performance aga
 
 * AC 17: Clicking info icon displays tooltip with contextual information (TBD)
 
-### Task 9: Overview - Plays vs Skip Analytics
+### Task 9: Overview Tab - Plays vs Skip Analytics
 
 **User Story:**
 
@@ -493,7 +493,7 @@ so that I can understand listener engagement patterns and identify whether my so
 
 * AC 17: Clicking info icon displays tooltip with contextual information (TBD)
 
-### Task 10: Overview - City Performance Analytics
+### Task 10: Overview Tab - City Performance Analytics
 
 **User Story:**
 
@@ -580,7 +580,7 @@ so that I can understand geographic distribution of my audience and identify top
 
 * AC 25: Clicking info icon displays tooltip with contextual information (TBD)
 
-### Task 11: Overview - Song Data Analytics Dashboard
+### Task 11: Overview Tab - Song Data Analytics Dashboard
 
 **User Story:**
 
@@ -677,7 +677,7 @@ so that I can analyze different performance aspects by switching between various
 
 * AC 25: Clicking info icon displays tooltip with contextual information (TBD)
 
-### Task 12: Overview - Top Hosts Analytics
+### Task 12: Overview Tab - Top Hosts Analytics
 
 **User Story:**
 
