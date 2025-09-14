@@ -1061,5 +1061,142 @@ so that I can analyze my song's performance against other tracks and understand 
 
 * AC 25: Chart maintains accessibility standards with proper contrast ratios and screen reader support
 
+### Task 16: Discovery Tab - Likes vs Dislikes Analytics
+
+**User Story:**
+
+GIVEN that I am viewing the Discovery tab,  
+AS an artist,  
+I want to see comprehensive likes vs dislikes analytics with interactive tab navigation and detailed performance data  
+so that I can analyze audience sentiment patterns across different demographic segments and geographic locations.
+
+**Acceptance Criteria:**
+
+* AC 1: Likes vs Dislikes section displays below the Song Comparison section within the Discovery tab
+
+* AC 2: Section header shows "Likes vs Dislikes" with clear visual hierarchy and professional typography
+
+* AC 3: Header section includes info icon (ⓘ) in the top left area for additional information access
+
+* AC 4: Clicking info icon displays tooltip with contextual information (TBD)
+
+* AC 5: Sub-header displays "Likes vs Dislikes" with subtitle "Since first in the feed" providing temporal context
+
+* AC 6: Song title "La La Lost You" displays prominently below sub-header with consistent styling
+
+* AC 7: Two horizontal progress bars display comparative performance data:
+
+  * Top bar: "La La Lost You" showing dynamic percentage (e.g., "45%") with pink/magenta fill
+  
+  * Bottom bar: "Other songs average" showing dynamic percentage (e.g., "45%") with gray fill
+
+* AC 8: Progress bars maintain proportional visual representation of their respective percentages
+
+* AC 9: Legend section displays below progress bars with comprehensive identification:
+
+  * Pink/magenta circle indicator with "Your Likes" label
+  
+  * User profile avatar (circular format) positioned adjacent to legend
+  
+  * Consistent styling with application theme and proper spacing
+
+* AC 10: Interactive tab navigation system displays five clickable tabs:
+
+  * Comparison (default selected/active tab with white background)
+  
+  * Genre (inactive tab with darker background)
+  
+  * Age (inactive tab with darker background)
+  
+  * City (inactive tab with darker background)
+  
+  * Source (inactive tab with darker background)
+
+* AC 11: Active tab (Comparison) displays with distinct visual styling to indicate current selection
+
+* AC 12: Clicking on any tab switches the view and updates all underlying data analytics
+
+* AC 13: Tab switching maintains smooth transitions without affecting other Discovery tab content
+
+* AC 14: Data period section displays below tab navigation showing "Jan 2024 - Jan 2025" timeframe
+
+* AC 15: Song performance metrics section displays comprehensive engagement data:
+
+  * Song title "La La Lost You" with dynamic percentage (e.g., "45%")
+  
+  * Likes count with formatted number (e.g., "24.5K")
+  
+  * Dislikes count with formatted number (e.g., "221")
+  
+  * Consistent typography and spacing throughout metrics
+
+* AC 16: "Other songs average" comparison metric displays with dynamic percentage (e.g., "45%")
+
+* AC 17: "Data Analytics" section header displays below performance metrics with clear visual hierarchy
+
+* AC 18: Interactive bar chart visualization displays comprehensive city-based analytics:
+
+  * Y-axis scale ranges from 0% to 100% with clear interval markings (0%, 20%, 40%, 60%, 80%, 100%)
+  
+  * X-axis displays city abbreviations (PHO, PHI, DAL, SJ, NYC, LA, C) with proper spacing
+  
+  * Horizontal dashed grid lines provide precise percentage reference points
+  
+  * Chart area uses dark background for optimal data visualization
+
+* AC 19: Dual-color bar chart represents likes vs dislikes data:
+
+  * Pink/magenta bars represent likes percentage for each city
+  
+  * Purple/dark bars represent dislikes percentage for each city
+  
+  * Stacked bar format showing combined 100% for each city location
+
+* AC 20: Interactive tooltip functionality displays detailed information on bar hover:
+
+  * Shows specific engagement counts (e.g., "523 Likes, 124 Dislikes")
+  
+  * Displays corresponding city name (e.g., "San Jose, SJ")
+  
+  * White background with rounded corners and proper positioning
+  
+  * Tooltip appears with smooth animation and optimal placement
+
+* AC 21: Chart supports interactive hover states for enhanced user engagement and data exploration
+
+* AC 22: All chart elements (axes, grid, bars, labels) use consistent color scheme matching Discovery tab design
+
+* AC 23: Data visualization accurately reflects audience sentiment patterns across different cities
+
+* AC 24: Chart responsive design ensures proper display across different screen sizes and orientations
+
+* AC 25: Tab-specific data updates dynamically based on selected navigation tab:
+
+  * Comparison tab: Shows comparative likes/dislikes across songs
+  
+  * Genre tab: Displays sentiment data segmented by music genre
+  
+  * Age tab: Shows likes/dislikes breakdown by audience age groups
+  
+  * City tab: Displays geographic sentiment distribution
+  
+  * Source tab: Shows sentiment data by traffic source/platform
+
+* AC 26: All performance data updates dynamically when different songs are selected from header dropdown
+
+* AC 27: Progress bars automatically refresh to show selected song's current sentiment statistics
+
+* AC 28: Chart loading states display appropriate indicators while sentiment data is being fetched
+
+* AC 29: Error handling provides user-friendly messages if likes/dislikes data cannot be loaded
+
+* AC 30: All sentiment calculations reflect accurate real-time audience engagement and reaction data
+
+* AC 31: Section maintains consistent styling with other Discovery tab components
+
+* AC 32: Likes vs Dislikes section remains accessible and functional only within the Discovery tab context
+
+* AC 33: Chart maintains accessibility standards with proper contrast ratios and screen reader support
+
 ***
 
