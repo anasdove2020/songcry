@@ -158,7 +158,7 @@
 
 * AC 14: Sum of all breakdown categories equals the total cities counter (e.g., 758 + 987 + 24K = 32.245)
 
-*- AC 15: Breakdown area updates dynamically when different songs are selected from dropdown
+* AC 15: Breakdown area updates dynamically when different songs are selected from dropdown
 
 ### User Story 4: Tab Navigation System
 
