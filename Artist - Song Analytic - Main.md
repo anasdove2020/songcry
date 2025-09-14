@@ -677,5 +677,96 @@ so that I can analyze different performance aspects by switching between various
 
 * AC 25: Clicking info icon displays tooltip with contextual information (TBD)
 
+### Task 12: Top Hosts Analytics
+
+**User Story:**
+
+GIVEN that I am viewing the Overview tab,  
+AS an artist,  
+I want to see detailed analytics about my top hosts and their fan engagement  
+so that I can understand which fans are actively hosting my songs and driving community engagement.
+
+**Acceptance Criteria:**
+
+* AC 1: Top Hosts section displays below the Song Data Analytics section within the Overview tab
+
+* AC 2: Section header shows "Top Hosts" with navigational chevron (>) on the right
+
+* AC 3: Clicking the "Top Hosts" header title navigates to the dedicated Top Hosts page containing detailed artist's song host fans data
+
+* AC 4: Header chevron (>) provides visual indication of navigation capability to Top Hosts page
+
+* AC 5: Top-right corner displays dropdown filter with default selection "Total Plays"
+
+* AC 6: Dropdown filter shows downward arrow (▼) indicating expandable options
+
+* AC 7: Clicking dropdown filter opens bottom sheet modal with comprehensive filter options:
+
+  * "Select data filter" header with close (X) button in top-right
+
+  * "Total Plays" option with radio button (selected by default, pink/magenta)
+
+  * "Total Plays Generated" option with radio button (unselected by default)
+
+  * "Total Hosts Generated" option with radio button (unselected by default)
+
+  * "Total Followers Generated" option with radio button (unselected by default)
+
+  * "Apply" button at bottom for confirming selection
+
+* AC 8: Bottom sheet modal uses dark theme with white text for consistency with application styling
+
+* AC 9: Radio button selection allows only one filter option to be active at a time
+
+* AC 10: Clicking "Apply" button closes bottom sheet and updates top hosts performance data based on selected filter
+
+* AC 11: Clicking close (X) button dismisses bottom sheet without applying changes
+
+* AC 12: Top hosts ranking list displays exactly 5 fan/host entries with following comprehensive format:
+
+  * Ranking number (#1, #2, #3, #4, #5) in white text with consistent positioning
+
+  * Circular profile image/avatar for each fan/host user
+
+  * Username display with @ symbol format (e.g., "@aliflkpd") as primary identifier
+
+  * Subtitle showing "Fan Rank • #21" in gray text indicating fan's ranking position
+
+  * Green upward arrow (↑) indicators showing positive performance trends
+
+  * Performance metric display (e.g., "4K") with corresponding green color coding
+
+* AC 13: Each fan/host list item (grid row) is fully clickable and navigates to individual fan profile page
+
+* AC 14: Fan profile navigation provides detailed view of specific fan's hosting activity and engagement data
+
+* AC 15: Profile images display high-quality circular avatars representing each fan/host
+
+* AC 16: Username formatting maintains consistent @ symbol prefix for all entries
+
+* AC 17: Fan Rank subtitle provides context about each fan's position within the artist's fan community
+
+* AC 18: Performance metrics (4K) reflect the selected filter data (Total Plays, Total Plays Generated, etc.)
+
+* AC 19: Green upward arrows consistently indicate positive hosting performance trends
+
+* AC 20: List items support hover states for better user interaction feedback and clickability indication
+
+* AC 21: Each grid row maintains consistent spacing, alignment, and visual hierarchy
+
+* AC 22: Top hosts data updates dynamically when different songs are selected from header dropdown
+
+* AC 23: Filter selection persists during song switching until manually changed by user
+
+* AC 24: All fan/host data reflects accurate hosting activity and engagement metrics
+
+* AC 25: Section maintains consistent styling with other Overview tab components
+
+* AC 26: Top Hosts section remains accessible and functional only within the Overview tab context
+
+* AC 27: Header section includes info icon in the top left area for additional information access
+
+* AC 28: Clicking info icon displays tooltip with contextual information (TBD)
+
 ***
 
