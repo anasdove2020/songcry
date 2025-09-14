@@ -1,5 +1,22 @@
 # Song Analytic
 
+### General Information
+
+The Song Analytic page is a comprehensive dashboard that enables artists to analyze their song performance in depth. This page provides various analytics features that help artists understand how their songs are received by audiences across different geographical regions and platforms.
+
+**Key Features Available:**
+
+* **Interactive Map Visualization** - View song performance distribution on the United States map with color-coding based on engagement levels
+* **Multi-Tab Analytics** - Access data through 4 main tabs: Overview, Discovery, Audience, and Feed Insights
+* **Song Selection & Comparison** - Select specific songs for analysis and compare performance between songs
+* **Time Period Filtering** - Filter data based on specific time periods (24 hours to all-time)
+* **Geographic Performance Tracking** - Analyze performance by cities and states
+* **Engagement Metrics** - Track plays, skips, shares, and various other engagement metrics
+* **Audience Insights** - Understand audience demographics and behavior
+* **Feed Performance Analytics** - Specialized analysis for social media feed performance
+
+This page is designed to provide actionable insights for artists to optimize their music and marketing strategies.
+
 ## Page: Song Analytic Main
 
 ### Task 1: Header Section
