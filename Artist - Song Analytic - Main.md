@@ -210,7 +210,7 @@ so that I can access Overview, Discovery, Audience, and Feed Insights data with 
 
 * AC 10: Default Overview tab loads all associated content including map, statistics, and performance data
 
-### Task 5: Song Performance Card Display
+### Task 5: Overview - Song Performance Card Display
 
 **User Story:**
 
@@ -251,7 +251,7 @@ so that I can quickly view key metrics and performance indicators for the select
 
 * AC 15: Performance indicators (arrows and numbers) reflect real-time data accuracy
 
-### Task 6: Song Journey by States
+### Task 6: Overview - Song Journey by States
 
 **User Story:**
 
@@ -316,7 +316,7 @@ so that I can understand how my music spreads geographically across state bounda
 
 * AC 17: Clicking info icon displays tooltip with contextual information (TBD)
 
-### Task 7: Play Sources Analytics
+### Task 7: Overview - Play Sources Analytics
 
 **User Story:**
 
@@ -365,7 +365,7 @@ so that I can understand which platforms and sources are driving the most engage
 
 * AC 15: Clicking info icon displays tooltip with contextual information (TBD)
 
-### Task 8: Amount of Time Played Analytics
+### Task 8: Overview - Amount of Time Played Analytics
 
 **User Story:**
 
@@ -436,7 +436,7 @@ so that I can understand listening duration patterns and compare performance aga
 
 * AC 17: Clicking info icon displays tooltip with contextual information (TBD)
 
-### Task 9: Plays vs Skip Analytics
+### Task 9: Overview - Plays vs Skip Analytics
 
 **User Story:**
 
@@ -493,7 +493,7 @@ so that I can understand listener engagement patterns and identify whether my so
 
 * AC 17: Clicking info icon displays tooltip with contextual information (TBD)
 
-### Task 10: City Performance Analytics
+### Task 10: Overview - City Performance Analytics
 
 **User Story:**
 
@@ -580,7 +580,7 @@ so that I can understand geographic distribution of my audience and identify top
 
 * AC 25: Clicking info icon displays tooltip with contextual information (TBD)
 
-### Task 11: Song Data Analytics Dashboard
+### Task 11: Overview - Song Data Analytics Dashboard
 
 **User Story:**
 
@@ -677,7 +677,7 @@ so that I can analyze different performance aspects by switching between various
 
 * AC 25: Clicking info icon displays tooltip with contextual information (TBD)
 
-### Task 12: Top Hosts Analytics
+### Task 12: Overview - Top Hosts Analytics
 
 **User Story:**
 
@@ -2051,10 +2051,10 @@ so that I can analyze which tracks are performing better and make data-driven de
 * AC 3: Clicking the dropdown opens a bottom sheet titled "Select data filter"
 
 * AC 4: Bottom sheet contains four filter options:
-  * AC 4.1: All-Time Songs in Feed (selected by default with pink radio button)
-  * AC 4.2: Past Songs in Feed (unselected radio button)
-  * AC 4.3: Current Songs in Feed (unselected radio button with chevron > indicating nested navigation)
-  * AC 4.4: Top Songs in Profile (unselected radio button with chevron > indicating nested navigation)
+  *  All-Time Songs in Feed (selected by default with pink radio button)
+  *  Past Songs in Feed (unselected radio button)
+  *  Current Songs in Feed (unselected radio button with chevron > indicating nested navigation)
+  *  Top Songs in Profile (unselected radio button with chevron > indicating nested navigation)
 
 * AC 5: Selecting "Current Songs in Feed" opens a nested bottom sheet titled "Select songs in the feed" with song list and artist thumbnails
 
