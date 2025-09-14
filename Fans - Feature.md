@@ -1,12 +1,8 @@
-# Fans Feature
+# Module: On Boarding
 
-## Module = On Boarding Module
+## Page: On Boarding
 
-### Page = On Boarding Page
-
----
-
-#### Create On Boarding Page UI
+### Task: Create On Boarding Page UI
 
 **User Story:**  
 As a new user,  
@@ -22,7 +18,7 @@ so that I can understand what the app is about and feel confident to proceed.
 
 ---
 
-#### Handle Sign Up Button Click
+### Task: Handle Sign Up Button Click
 
 **User Story:**  
 As a new user,  
@@ -31,6 +27,7 @@ so that I can proceed to choose my role in the app.
 
 **Acceptance Criteria:**
 - AC 1: Button click navigates user to choose role page
+
 ---
 
 **Title:**  
@@ -48,7 +45,7 @@ so that I can quickly create an account without manual registration.
 
 ---
 
-#### Handle Facebook Sign Up Button
+### Task: Handle Facebook Sign Up Button
 
 **User Story:**  
 As a new user,  
@@ -62,8 +59,7 @@ so that I can quickly create an account using my existing social media profile.
 
 ---
 
-**Title:**  
-Handle Apple ID Sign Up Button
+### Task: Handle Apple ID Sign Up Button
 
 **User Story:**  
 As a new user,  
@@ -77,8 +73,7 @@ so that I can securely create an account with Apple's privacy features.
 
 ---
 
-**Title:**  
-Handle Login Link Click
+### Task: Handle Login Link Click
 
 **User Story:**  
 As an existing user,  
@@ -90,7 +85,7 @@ so that I can access my existing account.
 
 ---
 
-### Page = Choose Role
+## Page: Choose Role
 
 **Title:**  
 Create Choose Role Page UI
@@ -110,8 +105,7 @@ so that I can choose whether I'm joining as a Fan or an Artist.
 
 ---
 
-**Title:**  
-Handle Fan Role Selection
+### Task: Handle Fan Role Selection
 
 **User Story:**  
 As a new user,  
@@ -123,8 +117,7 @@ so that I can proceed to confirm my choice and access fan-specific features.
 
 ---
 
-**Title:**  
-Handle Artist Role Selection
+### Task: Handle Artist Role Selection
 
 **User Story:**  
 As a new user,  
@@ -136,12 +129,11 @@ so that I can proceed to confirm my choice and access artist-specific features.
 
 ---
 
-## Module = Sign Up
+# Module: Sign Up
 
-### Page = Fan Role Confirmation
+## Page: Fan Role Confirmation
 
-**Title:**  
-Create Fan Role Confirmation Page UI
+### Task: Create Fan Role Confirmation Page UI
 
 **User Story:**  
 GIVEN user selects Fan role on Choose Role Page,  
@@ -158,8 +150,7 @@ so that I can confirm my choice and understand what being a Fan means.
 
 ---
 
-**Title:**  
-Handle Fan Role Confirmation
+### Task: Handle Fan Role Confirmation
 
 **User Story:**  
 As a new user on Fan Role Confirmation Page,  
@@ -171,8 +162,7 @@ so that I can proceed to set up my email.
 
 ---
 
-**Title:**  
-Handle Back Navigation from Fan Role Confirmation Page
+### Task: Handle Back Navigation from Fan Role Confirmation Page
 
 **User Story:**  
 GIVEN user is on Fan Role Confirmation Page,  
@@ -187,10 +177,9 @@ so that I can return to the Choose Role Page.
 
 ---
 
-### Page = Set Username
+## Page: Set Username
 
-**Title:**  
-Create Set Username Page UI
+### Task: Create Set Username Page UI
 
 **User Story:**  
 GIVEN user completes Fan Role Confirmation,  
@@ -207,8 +196,7 @@ so that I can create a unique username for my account.
 
 ---
 
-**Title:**  
-Handle Username Input Validation
+### Task: Handle Username Input Validation
 
 **User Story:**  
 As a new user on Set Username Page,  
@@ -224,8 +212,7 @@ so that I know if my chosen username is available and meets requirements.
 
 ---
 
-**Title:**  
-Handle Continue Button from Set Username Page
+### Task: Handle Continue Button from Set Username Page
 
 **User Story:**  
 As a new user on Set Username Page,  
