@@ -2,11 +2,12 @@
 
 ## Module = On Boarding Module
 
-### Page = On Boarding
+### On Boarding Page
 
-**Task 1**
+---
 
-**Title:** Create On Boarding Page UI
+**Title:** 
+Create On Boarding Page UI
 
 **User Story:**  
 As a new user,  
@@ -22,9 +23,8 @@ so that I can understand what the app is about and feel confident to proceed.
 
 ---
 
-**Task 2**
-
-**Title:** Handle Sign Up Button Click
+**Title:** 
+Handle Sign Up Button Click
 
 **User Story:**  
 As a new user,  
@@ -33,12 +33,10 @@ so that I can proceed to choose my role in the app.
 
 **Acceptance Criteria:**
 - AC 1: Button click navigates user to choose role page
-
 ---
 
-**Task 3**
-
-**Title:** Handle Google Sign Up Button
+**Title:** 
+Handle Google Sign Up Button
 
 **User Story:**  
 As a new user,  
@@ -52,9 +50,8 @@ so that I can quickly create an account without manual registration.
 
 ---
 
-**Task 4**
-
-**Title:** Handle Facebook Sign Up Button
+**Title:** 
+Handle Facebook Sign Up Button
 
 **User Story:**  
 As a new user,  
@@ -68,9 +65,8 @@ so that I can quickly create an account using my existing social media profile.
 
 ---
 
-**Task 5**
-
-**Title:** Handle Apple ID Sign Up Button
+**Title:** 
+Handle Apple ID Sign Up Button
 
 **User Story:**  
 As a new user,  
@@ -84,9 +80,8 @@ so that I can securely create an account with Apple's privacy features.
 
 ---
 
-**Task 6**
-
-**Title:** Handle Login Link Click
+**Title:** 
+Handle Login Link Click
 
 **User Story:**  
 As an existing user,  
@@ -100,9 +95,8 @@ so that I can access my existing account.
 
 ## Choose Role Page
 
-**Task 7**
-
-**Title:** Create Choose Role Page UI
+**Title:** 
+Create Choose Role Page UI
 
 **User Story:**  
 GIVEN user clicks Sign Up button on the On Boarding Page,  
@@ -119,9 +113,8 @@ so that I can choose whether I'm joining as a Fan or an Artist.
 
 ---
 
-**Task 8**
-
-**Title:** Handle Fan Role Selection
+**Title:** 
+Handle Fan Role Selection
 
 **User Story:**  
 As a new user,  
@@ -133,9 +126,8 @@ so that I can proceed to confirm my choice and access fan-specific features.
 
 ---
 
-**Task 9**
-
-**Title:** Handle Artist Role Selection
+**Title:** 
+Handle Artist Role Selection
 
 **User Story:**  
 As a new user,  
