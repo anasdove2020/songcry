@@ -2,6 +2,8 @@
 
 ## Page: Top Host
 
+*Note: Host refers to fans of the artist who host songs on the platform.*
+
 ### Task 1: Header Section
 
 **User Story:**  
@@ -20,12 +22,12 @@ so that I can easily identify the current page and navigate back to the main son
 * AC 7: Touch target for back button meets minimum size requirements (44px)
 * AC 8: Header adapts properly to different screen orientations and sizes
 
-### Task 2: Search and Filter Section
+### Task 2: Search Section
 
 **User Story:**  
 As an artist,  
-I want to search for specific hosts and filter the ranking by different metrics  
-so that I can quickly find relevant hosts and view rankings based on my preferred criteria.
+I want to search for specific hosts  
+so that I can quickly find relevant hosts in the ranking list.
 
 **Acceptance Criteria:**
 
@@ -34,40 +36,44 @@ so that I can quickly find relevant hosts and view rankings based on my preferre
 * AC 3: Search filters the ranking list in real-time as user types
 * AC 4: Search is case-insensitive and supports partial matches
 * AC 5: Clear search button (X) resets search and shows full list
-* AC 6: "Total Plays" dropdown button is displayed next to search bar
-* AC 7: Dropdown opens bottom sheet overlay with filter options
-* AC 8: Bottom sheet contains "Total Fans" and "Total Plays" radio button options
-* AC 9: Only one filter option can be selected at a time
-* AC 10: "Apply" button applies selected filter and closes bottom sheet
-* AC 11: "Cancel" button closes bottom sheet without applying changes
-* AC 12: Current selected filter is indicated on the dropdown button
+* AC 6: Search bar spans appropriate width for comfortable text input
 
-### Task 3: Host Ranking List
+### Task 3: Filter Section
 
 **User Story:**  
 As an artist,  
-I want to view a scrollable ranking list of hosts with status indicators  
-so that I can see performance rankings and track changes in host performance over time.
+I want to access filter options through a bottom sheet when clicking "Total Plays"  
+so that I can select different ranking criteria and apply filters to the host list.
 
 **Acceptance Criteria:**
 
-* AC 1: All hosts are displayed in descending order by selected metric
-* AC 2: Each host entry shows rank number (#1, #2, #3, etc.)
-* AC 3: Green up arrow (↑) displays for hosts with improved ranking
-* AC 4: Red down arrow (↓) displays for hosts with declined ranking
-* AC 5: "NEW" badge displays for newly entered hosts
-* AC 6: Status indicators are clearly visible and color-coded appropriately
-* AC 7: List supports smooth vertical scrolling
-* AC 8: Minimum 10 host entries are visible for comprehensive ranking view
-* AC 9: Horizontal scroll bar appears during vertical scrolling
-* AC 10: Scroll bar accurately represents current position in the list
-* AC 11: Scroll bar fades out after scrolling stops
-* AC 12: Ties in metrics maintain consistent ranking order
-* AC 13: Real-time updates reflect current performance data every 30 seconds
-* AC 14: Smooth scrolling performance with no lag
-* AC 15: Empty state display when no hosts match search criteria
+* AC 1: "Total Plays" filter button is positioned at top-right corner below search area
+* AC 2: Clicking "Total Plays" button opens a bottom sheet overlay from the bottom
+* AC 3: Bottom sheet displays "Select data filter" as the title with close (X) button
+* AC 4: Bottom sheet contains "Total Fans" and "Total Plays" as radio button options
+* AC 5: Only one filter option can be selected at a time using radio buttons
+* AC 6: "Apply" button at bottom applies selected filter and closes bottom sheet
+* AC 7: "Cancel" or close (X) button closes bottom sheet without applying changes
+* AC 8: Bottom sheet has dark overlay background and smooth slide-up animation
 
-### Task 4: Host Detail Data
+### Task 4: Host Ranking List
+
+**User Story:**  
+As an artist,  
+I want to view a scrollable ranking list of all hosts  
+so that I can see the global performance rankings in an organized format.
+
+**Acceptance Criteria:**
+
+* AC 1: All hosts are displayed in a vertical scrollable list format
+* AC 2: Hosts are ordered by the selected ranking metric (Total Plays or Total Fans)
+* AC 3: Each host entry shows their position in the ranking
+* AC 4: Status indicators (arrows, badges) are visible for ranking changes
+* AC 5: List supports smooth vertical scrolling functionality
+* AC 6: Scroll bar appears and functions properly during navigation
+* AC 7: List displays all available host data in the ranking
+
+### Task 5: Host Detail Data
 
 **User Story:**  
 As an artist, I want to see detailed information for each host in the ranking list  
