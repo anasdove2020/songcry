@@ -62,8 +62,8 @@ so that I can navigate, select songs, and control playback.
 ### User Story 2: Time Period Filter Dropdown
 
 **User Story:**
-As a user, 
-I want to filter map data by time period 
+As a user,  
+I want to filter map data by time period  
 so that I can analyze performance for specific timeframes.
 
 **Acceptance Criteria:**
@@ -103,8 +103,8 @@ so that I can analyze performance for specific timeframes.
 ### User Story 3: Interactive Map Section
 
 **User Story:**
-As a user, 
-I want to view an interactive map of the United States 
+As a user,  
+I want to view an interactive map of the United States  
 so that I can see geographical performance data of my song.
 
 **Acceptance Criteria:**
@@ -172,8 +172,8 @@ so that I can see geographical performance data of my song.
 ### User Story 4: Tab Navigation System
 
 **User Story:**
-As a user, 
-I want to navigate between different analytics views using tabs 
+As a user,  
+I want to navigate between different analytics views using tabs  
 so that I can access Overview, Discovery, Audience, and Feed Insights data with Overview being the default view.
 
 **Acceptance Criteria:**
@@ -209,9 +209,9 @@ so that I can access Overview, Discovery, Audience, and Feed Insights data with 
 ### User Story 5: Song Performance Card Display
 
 **User Story:**
-GIVEN that I am viewing the Overview tab, 
-AS a user, 
-I want to see a detailed song performance card 
+GIVEN that I am viewing the Overview tab,  
+AS a user,  
+I want to see a detailed song performance card  
 so that I can quickly view key metrics and performance indicators for the selected song.
 
 **Acceptance Criteria:**
@@ -249,9 +249,9 @@ so that I can quickly view key metrics and performance indicators for the select
 ### User Story 6: Song Journey by States
 
 **User Story:**
-GIVEN that I am viewing the Overview tab, 
-AS an artist, 
-I want to track my song's journey from initial upload through different US states 
+GIVEN that I am viewing the Overview tab,  
+AS an artist,  
+I want to track my song's journey from initial upload through different US states  
 so that I can understand how my music spreads geographically across state boundaries from the moment it was first uploaded.
 
 **Acceptance Criteria:**
