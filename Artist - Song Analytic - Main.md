@@ -312,5 +312,58 @@ so that I can understand how my music spreads geographically across state bounda
 
 * AC 15: State journey tracking remains accessible and functional only within the Overview tab context
 
+* AC 16: Header section includes info icon in the top left area for additional information access
+
+* AC 17: Clicking info icon displays tooltip with contextual information (TBD)
+
+### Task 7: Play Sources Analytics
+
+**User Story:**
+
+GIVEN that I am viewing the Overview tab,  
+AS an artist,  
+I want to see detailed analytics about where my song is being played from different sources  
+so that I can understand which platforms and sources are driving the most engagement.
+
+**Acceptance Criteria:**
+
+* AC 1: Play Sources section displays below the Song Journey section within the Overview tab
+
+* AC 2: Section header shows "Play Sources" with clear visual hierarchy
+
+* AC 3: Four main source categories are displayed with progress bars:
+
+  * Feed: Shows percentage and visual progress bar (e.g., "45%")
+
+  * Hosts: Shows percentage and visual progress bar (e.g., "45%")
+
+  * Profile: Shows percentage and visual progress bar (e.g., "45%")
+
+  * Shares: Shows percentage and visual progress bar (e.g., "45%")
+
+* AC 4: Progress bars use consistent color coding (magenta/pink) for visual consistency
+
+* AC 5: Each progress bar accurately reflects the percentage of plays from that source
+
+* AC 6: Percentages are calculated based on total plays across all sources
+
+* AC 7: Progress bars are visually proportional to their respective percentages
+
+* AC 8: Source names are clearly labeled and easily readable
+
+* AC 9: Section maintains consistent styling with other Overview tab components
+
+* AC 10: Play Sources data updates dynamically when different songs are selected from header dropdown
+
+* AC 11: All percentage calculations reflect real-time data accuracy
+
+* AC 12: Progress bars provide smooth visual transitions when data updates
+
+* AC 13: Section remains accessible and functional only within the Overview tab context
+
+* AC 14: Header section includes info icon in the top left area for additional information access
+
+* AC 15: Clicking info icon displays tooltip with contextual information (TBD)
+
 ***
 
