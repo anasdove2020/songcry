@@ -544,7 +544,15 @@ so that I can understand geographic distribution of my audience and identify top
 
   * Subtitle showing "Your Rank • #21" in gray text
 
-  * Green upward arrow (↑) with performance metric (e.g., "4.2K") in green text
+  * Ranking status indicators with performance metrics:
+
+    * Green upward arrow (↑): Indicates city moved up in ranking from previous period
+
+    * Red downward arrow (↓): Indicates city moved down in ranking from previous period
+
+    * "NEW" badge: Indicates city is newly entered into top 5 leaderboard
+
+  * Performance metric (e.g., "4.2K") displayed with corresponding status indicator color
 
 * AC 13: Each city list item maintains consistent spacing and alignment
 
