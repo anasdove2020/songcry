@@ -774,5 +774,292 @@ so that I can understand which fans are actively hosting my songs and driving co
 
 * AC 28: Clicking info icon displays tooltip with contextual information (TBD)
 
+### Task 13: Discovery Tab - Unique vs Returning Listeners Analytics
+
+**User Story:**
+
+GIVEN that I am viewing the Discovery tab,  
+AS an artist,  
+I want to see detailed analytics comparing unique versus returning listeners over time  
+so that I can understand my audience retention patterns and discover insights about listener behavior trends.
+
+**Acceptance Criteria:**
+
+* AC 1: Discovery tab displays "Unique vs Returning Listeners" analytics section as the primary content area
+
+* AC 2: Section header shows "Unique vs Returning Listeners" with clear visual hierarchy and professional typography
+
+* AC 3: Header section includes info icon in the top left area for additional information access
+
+* AC 4: Clicking info icon displays tooltip with contextual information (TBD)
+
+* AC 5: Analytics chart displays comprehensive line graph with dual-line visualization:
+
+  * Y-axis scale ranges from 0 to 10,000 with appropriate interval markings (0, 2,000, 4,000, 6,000, 8,000, 10,000)
+
+  * X-axis shows monthly progression with clear labels (Jan, Feb, Mar, Apr, May)
+
+  * Grid lines provide precise data reference points for accurate reading
+
+* AC 6: Two distinct colored trend lines represent different listener categories:
+
+  * Pink/magenta line represents "Return Listener" data with smooth curve progression
+
+  * Purple line represents "Unique Listener" data with independent trend visualization
+
+* AC 7: Interactive tooltip functionality displays detailed information on data point hover:
+
+  * Shows specific listener count (e.g., "3,325 Return Listener")
+
+  * Displays corresponding time period (e.g., "April 2025")
+
+  * Tooltip appears with smooth animation and optimal positioning
+
+  * White background with rounded corners for clear readability
+
+* AC 8: Chart legend positioned at bottom of graph clearly identifies line colors:
+
+  * Pink/magenta circle indicator with "Return Listener" label
+
+  * Purple circle indicator with "Unique Listener" label
+
+  * Legend maintains consistent styling with chart theme
+
+* AC 9: Data visualization accurately reflects listener behavior patterns over the specified time period
+
+* AC 10: Chart supports interactive hover states for enhanced user engagement and data exploration
+
+* AC 11: Line chart maintains smooth curve rendering for professional data presentation
+
+* AC 12: All chart elements (axes, grid, lines, labels) use consistent color scheme matching application design
+
+* AC 13: Chart responsive design ensures proper display across different screen sizes and orientations
+
+* AC 14: Data updates dynamically when different songs are selected from header dropdown
+
+* AC 15: Chart loading states display appropriate indicators while data is being fetched
+
+* AC 16: Error handling provides user-friendly messages if data cannot be loaded
+
+* AC 17: Chart maintains accessibility standards with proper contrast ratios and screen reader support
+
+* AC 18: Discovery tab remains accessible and functional only when explicitly selected by the artist
+
+* AC 19: Section maintains consistent styling with other application components and tabs
+
+* AC 20: All listener analytics calculations reflect accurate real-time audience engagement data
+
+### Task 14: Discovery Tab - Audience Retention Analytics
+
+**User Story:**
+
+GIVEN that I am viewing the Discovery tab,  
+AS an artist,  
+I want to see detailed audience retention analytics with an interactive slider for my songs  
+so that I can understand at what specific moments listeners drop off and optimize my content accordingly.
+
+**Acceptance Criteria:**
+
+* AC 1: Audience Retention section displays below the Unique vs Returning Listeners section within the Discovery tab
+
+* AC 2: Section header shows "Audience Retention" with clear visual hierarchy and professional typography
+
+* AC 3: Header section includes info icon (ⓘ) in the top left area for additional information access
+
+* AC 4: Clicking info icon displays tooltip with contextual information (TBD)
+
+* AC 5: Song cover image displays prominently in the upper section with high-quality resolution and proper aspect ratio
+
+* AC 6: Interactive timeline slider positioned below the song cover with comprehensive functionality:
+
+  * Horizontal slider bar spanning full width of the retention chart
+
+  * Draggable handle/thumb positioned at current playback time (e.g., 2:02)
+
+  * Time markers at start (0:00), current position (2:02), and end (2:46) of song duration
+
+  * Pink/magenta colored handle for visual consistency with application theme
+
+  * Smooth dragging interaction allowing precise time selection
+
+* AC 7: Artist can drag slider handle to any specific time position (seconds/minutes) within song duration
+
+* AC 8: Slider interaction immediately updates retention chart data to show audience behavior at selected time point
+
+* AC 9: Subtitle "Average play duration over time" provides clear context for the retention analytics
+
+* AC 10: Retention chart displays comprehensive audience retention visualization:
+
+  * Y-axis shows percentage scale from 0% to 100% with clear interval markings (0%, 33%, 66%, 100%)
+
+  * X-axis displays song duration timeline from 0:00 to 2:46 with appropriate time intervals
+
+  * Horizontal dashed grid lines provide precise percentage reference points
+
+  * Chart area uses dark background for optimal data visibility
+
+* AC 11: Interactive tooltip displays detailed retention information:
+
+  * Shows specific retention percentage (e.g., "66% of your audience")
+
+  * Displays corresponding time duration (e.g., "stayed until 2:46")
+
+  * Pink/magenta circular indicator for visual consistency
+
+  * White background with rounded corners and proper positioning
+
+  * Tooltip appears dynamically based on slider position
+
+* AC 12: Dual-line chart visualization compares retention performance:
+
+  * Pink/magenta line represents current song "La La Lost You" retention data
+
+  * Gray line represents "Other songs average" as comparative baseline
+
+  * Both lines display smooth curve progression with accurate data points
+
+* AC 13: Chart legend positioned at bottom clearly identifies line meanings:
+
+  * Pink/magenta circle indicator with "La La Lost You" label
+
+  * Gray circle indicator with "Other songs average" label
+
+  * Legend maintains consistent styling with chart theme
+
+* AC 14: Real-time data synchronization ensures slider position matches tooltip information and chart highlighting
+
+* AC 15: Slider supports both mouse drag and touch interactions for cross-device compatibility
+
+* AC 16: Chart maintains smooth animation transitions when slider position changes
+
+* AC 17: Retention data updates dynamically when different songs are selected from header dropdown
+
+* AC 18: Slider range automatically adjusts to match selected song's actual duration
+
+* AC 19: Chart responsive design ensures proper display across different screen sizes and orientations
+
+* AC 20: All retention calculations reflect accurate listener behavior and drop-off patterns
+
+* AC 21: Section maintains consistent styling with other Discovery tab components
+
+* AC 22: Audience Retention section remains accessible and functional only within the Discovery tab context
+
+* AC 23: Chart loading states display appropriate indicators while retention data is being fetched
+
+* AC 24: Error handling provides user-friendly messages if retention data cannot be loaded
+
+* AC 25: Chart maintains accessibility standards with proper contrast ratios and keyboard navigation support
+
+### Task 15: Discovery Tab - Song Comparison
+
+**User Story:**
+
+GIVEN that I am viewing the Discovery tab,  
+AS an artist,  
+I want to see comprehensive song performance data with comparison metrics and interactive analytics  
+so that I can analyze my song's performance against other tracks and understand detailed engagement patterns.
+
+**Acceptance Criteria:**
+
+* AC 1: Song Comparison section displays below the Audience Retention section within the Discovery tab
+
+* AC 2: Section header shows "Song Comparison" with clear visual hierarchy and professional typography
+
+* AC 3: Header section includes info icon (ⓘ) in the top left area for additional information access
+
+* AC 4: Clicking info icon displays tooltip with contextual information (TBD)
+
+* AC 5: Three metric cards display horizontally across the top section with comprehensive performance data:
+
+  * Plays card shows dynamic value (e.g., "230K") with variable trend indicator (green upward/red downward arrow) and dynamic percentage change (e.g., "2%")
+  
+  * Hosts card shows dynamic value (e.g., "230K") with variable trend indicator (green upward/red downward arrow) and dynamic percentage change (e.g., "2%")
+  
+  * Followers card shows dynamic value (e.g., "230K") with variable trend indicator (green upward/red downward arrow) and dynamic percentage change (e.g., "2%")
+
+* AC 6: Each metric card maintains consistent styling with white background, rounded corners, and proper spacing
+
+* AC 7: Performance indicators use color-coded arrows for immediate visual understanding:
+
+  * Green upward arrow (↗) indicates positive performance increase
+  
+  * Red downward arrow (↘) indicates performance decrease
+  
+  * Percentage values display with matching color (green for positive, red for negative)
+
+* AC 8: Status indicator section displays below metric cards with comprehensive information:
+
+  * Large number "805" prominently displayed with professional typography
+  
+  * Green checkmark (✓) icon indicating positive status
+  
+  * Descriptive text "About the same as usual" providing context for the metric
+  
+  * Gray text styling for subtle but readable information presentation
+
+* AC 9: Interactive line chart displays comprehensive song performance analytics:
+
+  * Y-axis scale ranges from 0 to 500 with clear interval markings (0, 100, 200, 300, 400, 500)
+  
+  * X-axis shows monthly progression with clear labels (Jan, Feb, Mar, Apr, May)
+  
+  * Horizontal dashed grid lines provide precise data reference points
+  
+  * Chart area uses dark background for optimal data visualization
+
+* AC 10: Dual-line chart visualization compares performance data:
+
+  * Pink/magenta line represents current song "La La Lost You" performance data
+  
+  * Gray line represents "Other songs average" as comparative baseline
+  
+  * Both lines display smooth curve progression with accurate data points
+
+* AC 11: Interactive tooltip functionality displays detailed information on data point hover:
+
+  * Shows specific play count (e.g., "Total Plays : 257")
+  
+  * Displays corresponding time period (e.g., "March 2025")
+  
+  * Pink/magenta circular indicator for visual consistency
+  
+  * White background with rounded corners and proper positioning
+  
+  * Tooltip appears with smooth animation and optimal placement
+
+* AC 12: Chart legend positioned at bottom clearly identifies line meanings:
+
+  * Pink/magenta circle indicator with "La La Lost You" label
+  
+  * Gray circle indicator with "Other songs average" label
+  
+  * Legend maintains consistent styling with chart theme and application design
+
+* AC 13: Chart supports interactive hover states for enhanced user engagement and data exploration
+
+* AC 14: All chart elements (axes, grid, lines, labels) use consistent color scheme matching Discovery tab design
+
+* AC 15: Data visualization accurately reflects song performance patterns over the specified time period
+
+* AC 16: Chart responsive design ensures proper display across different screen sizes and orientations
+
+* AC 17: Song performance data updates dynamically when different songs are selected from header dropdown
+
+* AC 18: Metric cards automatically refresh to show selected song's current performance statistics
+
+* AC 19: Status indicator updates to reflect selected song's performance relative to historical averages
+
+* AC 20: Chart loading states display appropriate indicators while performance data is being fetched
+
+* AC 21: Error handling provides user-friendly messages if song data cannot be loaded
+
+* AC 22: All performance calculations reflect accurate real-time song engagement and streaming data
+
+* AC 23: Section maintains consistent styling with other Discovery tab components
+
+* AC 24: Song Comparison section remains accessible and functional only within the Discovery tab context
+
+* AC 25: Chart maintains accessibility standards with proper contrast ratios and screen reader support
+
 ***
 
