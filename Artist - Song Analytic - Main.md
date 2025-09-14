@@ -68,31 +68,31 @@
 
 * AC 3: Bottom sheet includes comprehensive time period options:
 
-* Latest 24 hours
+  * Latest 24 hours
 
-* Last 7 days
+  * Last 7 days
 
-* Last 14 days
+  * Last 14 days
 
-* Last 30 days
+  * Last 30 days
 
-* Last 60 days
+  * Last 60 days
 
-* Last 90 days
+  * Last 90 days
 
-* Last 6 months
+  * Last 6 months
 
-* Last 12 months
+  * Last 12 months
 
-* All-time
+  * All-time
 
-- AC 4: "All-time" is selected by default
+* AC 4: "All-time" is selected by default
 
-- AC 5: Selecting option updates dropdown display and closes bottom sheet
+* AC 5: Selecting option updates dropdown display and closes bottom sheet
 
-- AC 6: Apply button confirms selection and updates map data
+* AC 6: Apply button confirms selection and updates map data
 
-- AC 7: Map dots and statistics update based on selected time period
+* AC 7: Map dots and statistics update based on selected time period
 
 ### User Story 3: Interactive Map Section
 
