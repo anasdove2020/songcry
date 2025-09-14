@@ -2,7 +2,7 @@
 
 ## Module = On Boarding Module
 
-### On Boarding Page
+### Page = On Boarding Page
 
 ---
 
@@ -93,7 +93,7 @@ so that I can access my existing account.
 
 ---
 
-## Choose Role Page
+### Page = Choose Role
 
 **Title:**  
 Create Choose Role Page UI
