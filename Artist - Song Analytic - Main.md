@@ -1,8 +1,8 @@
 # Song Analytic
 
-## Task 1: Create Song Analytic Main Page UI
+## Page: Create Song Analytic Main
 
-### Section 1: Header Section
+### Task 1: Header Section
 
 **User Story:**
 
@@ -60,7 +60,7 @@ so that I can navigate, select songs, and control playback.
 
 * AC 9: Play button navigates to feed page and starts playing selected song
 
-### Section 2: Time Period Filter Dropdown
+### Task 2: Time Period Filter Dropdown
 
 **User Story:**
 
@@ -102,7 +102,7 @@ so that I can analyze performance for specific timeframes.
 
 * AC 7: Map dots and statistics update based on selected time period
 
-### Section 3: Interactive Map Section
+### Task 3: Interactive Map Section
 
 **User Story:**
 
@@ -172,7 +172,7 @@ so that I can see geographical performance data of my song.
 
 * AC 15: Breakdown area updates dynamically when different songs are selected from dropdown
 
-### Section 4: Tab Navigation System
+### Task 4: Tab Navigation System
 
 **User Story:**
 
@@ -210,7 +210,7 @@ so that I can access Overview, Discovery, Audience, and Feed Insights data with 
 
 * AC 10: Default Overview tab loads all associated content including map, statistics, and performance data
 
-### Section 5: Song Performance Card Display
+### Task 5: Song Performance Card Display
 
 **User Story:**
 
@@ -251,7 +251,7 @@ so that I can quickly view key metrics and performance indicators for the select
 
 * AC 15: Performance indicators (arrows and numbers) reflect real-time data accuracy
 
-### Section 6: Song Journey by States
+### Task 6: Song Journey by States
 
 **User Story:**
 
