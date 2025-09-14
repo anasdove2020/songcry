@@ -580,5 +580,102 @@ so that I can understand geographic distribution of my audience and identify top
 
 * AC 25: Clicking info icon displays tooltip with contextual information (TBD)
 
+### Task 11: Song Data Analytics Dashboard
+
+**User Story:**
+
+GIVEN that I am viewing the Overview tab,  
+AS an artist,  
+I want to see interactive song data analytics with multiple metric buttons  
+so that I can analyze different performance aspects by switching between various data visualizations.
+
+**Acceptance Criteria:**
+
+* AC 1: Song Data Analytics section displays below the City Performance section within the Overview tab
+
+* AC 2: Section header shows "Song Data" with clear visual hierarchy
+
+* AC 3: Horizontal scrollable button container displays 5 clickable metric buttons:
+
+  * "Plays" button (default selected with white background)
+
+  * "Hosts" button (unselected with dark background)
+
+  * "Followers" button (unselected with dark background)
+
+  * "Returning Listeners" button (unselected with dark background)
+
+  * "Total Fans Listened" button (unselected with dark background)
+
+* AC 4: Button container shows only 3 buttons visible by default in the viewport
+
+* AC 5: Horizontal scrolling functionality allows users to swipe/scroll right to reveal additional buttons
+
+* AC 6: Smooth horizontal scroll animation when swiping between button sets
+
+* AC 7: Each button displays metric name with clear, readable typography
+
+* AC 8: Active button shows distinct visual styling (white background) while inactive buttons show darker styling
+
+* AC 9: Clicking any button switches the active state and updates the corresponding graph below
+
+* AC 10: Button selection maintains single-select behavior (only one button active at a time)
+
+* AC 11: Below buttons, comprehensive analytics graph displays with:
+
+  * Top metrics bar showing current values for selected metric (e.g., "230K" for Plays)
+
+  * Percentage change indicators with color-coded arrows (green ↑ for positive, red ↓ for negative)
+
+  * Time-based line chart with monthly progression (Jan, Feb, Mar, Apr, May)
+
+  * Y-axis scale appropriate for selected metric (0-500 range)
+
+  * Interactive data point highlighting with tooltip functionality
+
+* AC 12: Graph tooltip displays detailed information on hover:
+
+  * Specific metric value (e.g., "280 Plays")
+
+  * Time period reference (e.g., "March 2025")
+
+  * Smooth tooltip animation and positioning
+
+* AC 13: Each metric button switches graph data to show corresponding analytics:
+
+  * Plays: Shows play count trends and statistics
+
+  * Hosts: Shows hosting activity and engagement metrics
+
+  * Followers: Shows follower growth and retention data
+
+  * Returning Listeners: Shows repeat listener behavior patterns
+
+  * Total Fans Listened: Shows total fan engagement metrics
+
+* AC 14: Graph maintains consistent visual styling across all metric types
+
+* AC 15: Line chart uses consistent color coding (pink/magenta) for data visualization
+
+* AC 16: Grid lines and axis labels provide clear data reference points
+
+* AC 17: All metric data updates dynamically when different songs are selected from header dropdown
+
+* AC 18: Button scrolling supports both touch/swipe gestures and mouse wheel interactions
+
+* AC 19: Responsive design ensures proper button and graph display across different screen sizes
+
+* AC 20: Section maintains consistent styling with other Overview tab components
+
+* AC 21: All analytics calculations reflect accurate real-time performance data
+
+* AC 22: Graph transitions smoothly when switching between different metrics
+
+* AC 23: Section remains accessible and functional only within the Overview tab context
+
+* AC 24: Header section includes info icon in the top left area for additional information access
+
+* AC 25: Clicking info icon displays tooltip with contextual information (TBD)
+
 ***
 
