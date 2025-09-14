@@ -1568,5 +1568,200 @@ so that I can understand the gender distribution of my audience and analyze fan 
   
   * High contrast mode compatibility
 
+### Task 19: Audience Tab - City Performance Analytics
+
+**User Story:**
+
+GIVEN that I am viewing the Audience tab,  
+AS an artist,  
+I want to see comprehensive city performance analytics with ranking visualization and navigation capabilities  
+so that I can understand which cities have the strongest fan engagement and easily access detailed city performance data.
+
+**Acceptance Criteria:**
+
+* AC 1: City Performance section displays prominently within the Audience tab interface below Gender Demographics section
+
+* AC 2: Section header shows "City Performance" with clear visual hierarchy and professional typography
+
+* AC 3: Header section includes info icon (ⓘ) in the top left area for additional information access
+
+* AC 4: Clicking info icon displays tooltip with contextual information about city performance analytics (TBD)
+
+* AC 5: Header title "City Performance" is clickable and navigates to dedicated City Performance page when clicked
+
+* AC 6: Header includes navigational chevron (>) on the right side indicating navigation capability
+
+* AC 7: Clicking anywhere on the header area (title or chevron) triggers navigation to City Performance page
+
+* AC 8: Header hover state provides visual feedback with subtle highlighting or color change
+
+* AC 9: Top-right corner displays dropdown filter with default selection "Total Fans"
+
+* AC 10: Dropdown filter shows downward arrow (▼) indicating expandable options
+
+* AC 11: Clicking dropdown filter opens bottom sheet modal with filter options:
+
+  * "Select data filter" header with close (X) button in top-right
+  
+  * "Total Fans" option with radio button (selected by default, pink/magenta)
+  
+  * "Total Plays" option with radio button (unselected by default)
+  
+  * "Apply" button at bottom for confirming selection
+
+* AC 12: Bottom sheet modal uses dark theme with white text for consistency with application design
+
+* AC 13: Radio button selection allows only one option to be active at a time
+
+* AC 14: Clicking "Apply" button closes bottom sheet and updates city performance data based on selected filter
+
+* AC 15: Clicking close (X) button dismisses bottom sheet without applying changes
+
+* AC 16: City ranking list displays top 5 performing cities with comprehensive data visualization:
+
+  * Ranking number (#1, #2, #3, #4, #5) in white text with consistent styling
+  
+  * City thumbnail image in circular format representing each location
+  
+  * City name as primary text ("New York, NY", "Utah", "Bali", "Los Angeles", "Boston")
+  
+  * Subtitle showing "Your Rank • #21" in gray text for artist's ranking context
+  
+  * Performance metric ("4.2K") displayed on the right side
+
+* AC 17: Each city list item includes ranking status indicators with performance trend visualization:
+
+  * Green upward arrow (↑): Indicates city moved up in ranking from previous period
+  
+  * Red downward arrow (↓): Indicates city moved down in ranking from previous period
+  
+  * "NEW" badge: Indicates city is newly entered into top 5 leaderboard
+  
+  * Status indicators positioned on the left side of each city item
+
+* AC 18: City thumbnail images display representative circular images for each location:
+
+  * High-quality city skyline or landmark images
+  
+  * Consistent circular cropping and sizing
+  
+  * Proper image loading and fallback handling
+
+* AC 19: Performance metrics display with appropriate formatting:
+
+  * Numbers use appropriate suffixes (K for thousands)
+  
+  * Consistent decimal precision and formatting
+  
+  * Color coding matches status indicators (green for positive trends)
+
+* AC 20: City list maintains consistent spacing and alignment:
+
+  * Equal vertical spacing between each city item
+  
+  * Proper padding and margins for optimal readability
+  
+  * Left-aligned city information with right-aligned metrics
+  
+  * Consistent typography hierarchy throughout the list
+
+* AC 21: Interactive hover states provide enhanced user engagement:
+
+  * City list items highlight on mouse hover with subtle background change
+  
+  * Smooth transitions between normal and hover states
+  
+  * Visual feedback maintains accessibility standards
+
+* AC 22: All visual elements use consistent color scheme matching Audience tab design:
+
+  * Pink/magenta color palette for active states and positive indicators
+  
+  * Appropriate contrast ratios for accessibility compliance
+  
+  * Professional styling aligned with application theme
+
+* AC 23: City performance data updates dynamically when different songs are selected from header dropdown:
+
+  * City rankings adjust to reflect selected song's performance
+  
+  * Performance metrics and status indicators update automatically
+  
+  * Smooth animations during data transitions
+
+* AC 24: Filter selection updates city performance data based on chosen metric:
+
+  * "Total Fans" filter shows cities ranked by fan count
+  
+  * "Total Plays" filter shows cities ranked by play count
+  
+  * Data recalculation and re-ranking occurs smoothly
+
+* AC 25: Loading states display appropriate indicators while city performance data is being fetched:
+
+  * Loading animation or skeleton UI during data retrieval
+  
+  * Graceful handling of loading transitions
+  
+  * User feedback during data processing
+
+* AC 26: Error handling provides user-friendly messages if city performance data cannot be loaded:
+
+  * Clear error messages for data retrieval failures
+  
+  * Retry mechanisms for temporary connectivity issues
+  
+  * Fallback content when data is unavailable
+
+* AC 27: All performance calculations reflect accurate real-time city-based audience data:
+
+  * Precise ranking calculations with proper sorting algorithms
+  
+  * Verified fan count and play count aggregation by city
+  
+  * Data integrity validation and consistency checks
+
+* AC 28: Section maintains consistent styling with other Audience tab components:
+
+  * Typography consistency with tab design standards
+  
+  * Spacing and layout alignment with Age and Gender Demographics sections
+  
+  * Color scheme integration with overall tab theme
+
+* AC 29: City Performance section remains accessible and functional only within the Audience tab context:
+
+  * Section visibility controlled by tab navigation
+  
+  * Proper component lifecycle management
+  
+  * Tab-specific data loading and cleanup
+
+* AC 30: Navigation functionality maintains proper routing and page transitions:
+
+  * Smooth navigation to City Performance page without page reload
+  
+  * Proper URL routing and browser history management
+  
+  * Breadcrumb or back navigation support on destination page
+
+* AC 31: City ranking list maintains accessibility standards with proper contrast ratios and screen reader support:
+
+  * ARIA labels for ranking elements and city data
+  
+  * Keyboard navigation support for interactive elements
+  
+  * Screen reader compatible city descriptions and rankings
+  
+  * High contrast mode compatibility
+
+* AC 32: Responsive design ensures proper display across different screen sizes:
+
+  * City list adapts appropriately for mobile and desktop views
+  
+  * Header and dropdown positioning adjusts to available screen space
+  
+  * Maintains readability and functionality on all devices
+
 ***
 
