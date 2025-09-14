@@ -1763,5 +1763,274 @@ so that I can understand which cities have the strongest fan engagement and easi
   
   * Maintains readability and functionality on all devices
 
+### Task 20: Feed Insights Tab - Feed Performance Analytics
+
+**User Story:**
+
+GIVEN that I am viewing the Feed Insights tab,  
+AS an artist,  
+I want to see comprehensive feed performance analytics with dynamic filtering and achievement tracking  
+so that I can understand how my songs perform in feeds and celebrate key achievements with my audience.
+
+**Acceptance Criteria:**
+
+* AC 1: Feed Performance section displays prominently within the Feed Insights tab interface
+
+* AC 2: Section header shows "Feed Performance" with clear visual hierarchy and professional typography
+
+* AC 3: Header section includes subtitle "See how your song perform in feed" for context clarity
+
+* AC 4: Top section displays dropdown filter with default selection "Total Plays" and downward arrow (▼)
+
+* AC 5: Clicking dropdown filter opens bottom sheet modal with comprehensive filter options:
+
+  * "Select data filter" header with close (X) button in top-right corner
+  
+  * "Total Plays" option with radio button (selected by default)
+  
+  * "Feed Engagement Score" option with radio button and description "Shows how often people like, share, or host your songs compared to how many times they're played"
+  
+  * "Total Likes" option with radio button
+  
+  * "Total Hosts" option with radio button
+  
+  * "Total Replays" option with radio button
+  
+  * "Unique vs Return Listener" option with radio button
+  
+  * "Internal & External Shares" option with radio button
+  
+  * "Peak Engagement Day" option with radio button
+  
+  * "Follow Conversions" option with radio button
+  
+  * "Apply" button at bottom for confirming selection
+
+* AC 6: Bottom sheet modal uses dark theme with white text for consistency with application design
+
+* AC 7: Radio button selection allows only one filter option to be active at a time
+
+* AC 8: Clicking "Apply" button closes bottom sheet and updates chart data based on selected filter
+
+* AC 9: Clicking close (X) button dismisses bottom sheet without applying changes
+
+* AC 10: Chart section displays performance visualization with dynamic title and values:
+
+  * Chart title updates based on selected filter (e.g., "Total Plays", "Feed Engagement Score")
+  
+  * Primary metric displays prominently (e.g., "230K" for Total Plays)
+  
+  * Percentage change indicator shows trend (e.g., "+2%" in green)
+  
+  * Comparison text "Compared to Previous timeframe" provides context
+  
+  * Timeline spans from January to May with monthly markers
+
+* AC 11: Chart visualization shows performance trend over time:
+
+  * Line graph with pink/magenta color scheme matching application theme
+  
+  * Data points clearly marked with circular indicators
+  
+  * Smooth curve interpolation between data points
+  
+  * Hover states display specific values and dates
+  
+  * Peak performance highlighted with tooltip (e.g., "280 Total Plays (March 2025)")
+
+* AC 12: Chart updates dynamically when filter selection changes:
+
+  * Title changes to reflect selected metric
+  
+  * Primary value updates to show current metric total
+  
+  * Percentage change recalculates based on new metric
+  
+  * Chart data redraws with smooth animation transitions
+  
+  * Timeline and data points adjust to new metric values
+
+* AC 13: Achievement cards section displays below chart with swipeable horizontal scroll:
+
+  * Section shows multiple achievement cards in horizontal layout
+  
+  * Cards can be swiped left/right for navigation
+  
+  * Smooth scrolling with momentum and snap-to-card behavior
+  
+  * Scroll indicators show current card position
+
+* AC 14: Achievement cards display comprehensive song achievement information:
+
+  * Card background features celebratory confetti or sparkle design elements
+  
+  * Achievement title prominently displayed (e.g., "Your top performing track")
+  
+  * Song artwork displayed in square format with rounded corners
+  
+  * Song title shown below artwork (e.g., "La La Lost You")
+  
+  * Achievement description provides context about performance
+  
+  * Card uses dark theme with colorful accent elements
+
+* AC 15: Each achievement card includes interactive action buttons:
+
+  * "Say Thank You" button with send icon (✉) for outreach messaging
+  
+  * "Share" button with share icon for social media distribution
+  
+  * Buttons positioned at bottom of card with clear visual hierarchy
+  
+  * Button hover states provide visual feedback
+
+* AC 16: "Say Thank You" functionality enables outreach messaging:
+
+  * Clicking button opens message composition interface
+  
+  * Pre-populated message template for fan appreciation
+  
+  * Option to customize message content before sending
+  
+  * Distribution options for reaching fans across platforms
+  
+  * Send confirmation and delivery status tracking
+
+* AC 17: "Share" functionality provides social media distribution:
+
+  * Clicking button opens share options modal
+  
+  * Multiple platform options (Instagram, Twitter, Facebook, etc.)
+  
+  * Pre-formatted achievement post with song artwork and text
+  
+  * Customizable caption and hashtag suggestions
+  
+  * Direct posting or copy-to-clipboard options
+
+* AC 18: Achievement cards display relevant performance metrics:
+
+  * Specific achievement data (play counts, engagement rates, etc.)
+  
+  * Time period context for achievement (e.g., "March 2025")
+  
+  * Comparative performance indicators
+  
+  * Achievement ranking or percentile information
+
+* AC 19: Card navigation includes visual indicators:
+
+  * Dot indicators below cards show total count and current position
+  
+  * Active dot highlighted in pink/magenta theme color
+  
+  * Inactive dots shown in muted gray color
+  
+  * Dots update automatically during card swiping
+
+* AC 20: Achievement cards adapt to different achievement types:
+
+  * "Top Performing Track" cards for play count achievements
+  
+  * "Most Engaging Content" cards for interaction achievements
+  
+  * "Viral Moment" cards for rapid growth achievements
+  
+  * "Fan Favorite" cards for sustained popularity achievements
+  
+  * Custom achievement types based on performance metrics
+
+* AC 21: Loading states display appropriate indicators during data retrieval:
+
+  * Chart loading animation with skeleton UI
+  
+  * Achievement cards loading with placeholder content
+  
+  * Smooth transitions between loading and loaded states
+  
+  * User feedback during filter changes and data updates
+
+* AC 22: Error handling provides user-friendly messages for data issues:
+
+  * Clear error messages for chart data retrieval failures
+  
+  * Retry mechanisms for temporary connectivity issues
+  
+  * Fallback content when achievement data is unavailable
+  
+  * Graceful degradation for partial data loading
+
+* AC 23: All performance calculations reflect accurate real-time feed engagement data:
+
+  * Precise metric calculations with proper aggregation algorithms
+  
+  * Verified engagement data from feed interactions
+  
+  * Data integrity validation and consistency checks
+  
+  * Real-time updates when new engagement occurs
+
+* AC 24: Section maintains consistent styling with Feed Insights tab design:
+
+  * Typography consistency with tab design standards
+  
+  * Color scheme integration with overall application theme
+  
+  * Spacing and layout alignment with other tab sections
+  
+  * Professional visual hierarchy throughout components
+
+* AC 25: Feed Performance section remains accessible and functional only within Feed Insights tab context:
+
+  * Section visibility controlled by tab navigation
+  
+  * Proper component lifecycle management
+  
+  * Tab-specific data loading and cleanup
+  
+  * Context-aware achievement filtering
+
+* AC 26: Chart interaction provides enhanced user engagement:
+
+  * Hover tooltips display detailed metric information
+  
+  * Click interactions for drilling down into specific time periods
+  
+  * Zoom functionality for detailed timeline analysis
+  
+  * Export options for chart data and visualizations
+
+* AC 27: Achievement tracking maintains comprehensive performance history:
+
+  * Historical achievement records with timestamps
+  
+  * Achievement progression tracking over time
+  
+  * Milestone celebration and notification system
+  
+  * Achievement sharing history and engagement metrics
+
+* AC 28: Responsive design ensures optimal display across all device sizes:
+
+  * Chart adapts appropriately for mobile and desktop views
+  
+  * Achievement cards maintain swipeable functionality on touch devices
+  
+  * Filter dropdown positioning adjusts to available screen space
+  
+  * Maintains readability and functionality across all screen sizes
+
+* AC 29: Accessibility standards compliance throughout Feed Performance section:
+
+  * ARIA labels for chart elements and achievement cards
+  
+  * Keyboard navigation support for all interactive elements
+  
+  * Screen reader compatible descriptions for metrics and achievements
+  
+  * High contrast mode compatibility for visual elements
+  
+  * Focus management for modal interactions and card navigation
+
 ***
 
