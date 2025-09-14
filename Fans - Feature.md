@@ -6,7 +6,7 @@
 
 ---
 
-**Title:** 
+**Title:**  
 Create On Boarding Page UI
 
 **User Story:**  
@@ -23,7 +23,7 @@ so that I can understand what the app is about and feel confident to proceed.
 
 ---
 
-**Title:** 
+**Title:**  
 Handle Sign Up Button Click
 
 **User Story:**  
