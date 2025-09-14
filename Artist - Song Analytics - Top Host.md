@@ -5,7 +5,7 @@
 ### Task 1: Header Section
 
 **User Story:**  
-As an artist or content manager, I want to see a clear page header with navigation controls  
+As an artist, I want to see a clear page header with navigation controls  
 so that I can easily identify the current page and navigate back to the main song analytics page.
 
 **Acceptance Criteria:**
@@ -22,7 +22,7 @@ so that I can easily identify the current page and navigate back to the main son
 ### Task 2: Search and Filter Section
 
 **User Story:**  
-As an artist or content manager, I want to search for specific hosts and filter the ranking by different metrics  
+As an artist, I want to search for specific hosts and filter the ranking by different metrics  
 so that I can quickly find relevant hosts and view rankings based on my preferred criteria.
 
 **Acceptance Criteria:**
@@ -43,7 +43,7 @@ so that I can quickly find relevant hosts and view rankings based on my preferre
 ### Task 3: Host Ranking List
 
 **User Story:**  
-As an artist or content manager, I want to view a scrollable ranking list of hosts with status indicators  
+As an artist, I want to view a scrollable ranking list of hosts with status indicators  
 so that I can see performance rankings and track changes in host performance over time.
 
 **Acceptance Criteria:**
@@ -67,7 +67,7 @@ so that I can see performance rankings and track changes in host performance ove
 ### Task 4: Host Detail Data
 
 **User Story:**  
-As an artist or content manager, I want to see detailed information for each host in the ranking list  
+As an artist, I want to see detailed information for each host in the ranking list  
 so that I can understand their profile, performance metrics, and fan engagement levels.
 
 **Acceptance Criteria:**
