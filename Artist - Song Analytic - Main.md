@@ -436,5 +436,62 @@ so that I can understand listening duration patterns and compare performance aga
 
 * AC 17: Clicking info icon displays tooltip with contextual information (TBD)
 
+### Task 9: Plays vs Skip Analytics
+
+**User Story:**
+
+GIVEN that I am viewing the Overview tab,  
+AS an artist,  
+I want to see detailed analytics about plays versus skips for my song  
+so that I can understand listener engagement patterns and identify whether my song retains audience attention or gets skipped frequently.
+
+**Acceptance Criteria:**
+
+* AC 1: Plays vs Skip section displays below the Amount of Time Played section within the Overview tab
+
+* AC 2: Section header shows "Plays vs Skip" with clear visual hierarchy
+
+* AC 3: Horizontal progress bar displays two distinct segments:
+
+  * Left segment (pink/magenta): Shows "55% Played" with corresponding visual fill
+
+  * Right segment (dark purple): Shows "45% Skip/Swiped Away" with corresponding visual fill
+
+* AC 4: Progress bar segments are visually proportional to their respective percentages
+
+* AC 5: Color coding uses consistent theme colors:
+
+  * Pink/magenta for played content (positive engagement)
+
+  * Dark purple for skipped content (negative engagement)
+
+* AC 6: Percentage labels are clearly displayed within or adjacent to their respective segments
+
+* AC 7: Below progress bar, two descriptive labels are shown:
+
+  * Left label: "Played" (aligned with pink segment)
+
+  * Right label: "Skip/Swiped Away" (aligned with purple segment)
+
+* AC 8: Labels use appropriate typography and spacing for clear readability
+
+* AC 9: Progress bar maintains smooth visual transitions when data updates
+
+* AC 10: Percentages are calculated based on total listener interactions (plays + skips = 100%)
+
+* AC 11: All engagement data updates dynamically when different songs are selected from header dropdown
+
+* AC 12: Visual representation provides immediate understanding of listener retention vs abandonment
+
+* AC 13: Progress bar design follows consistent styling with other Overview tab components
+
+* AC 14: Section remains accessible and functional only within the Overview tab context
+
+* AC 15: Data accuracy reflects real-time listener behavior patterns
+
+* AC 16: Header section includes info icon in the top left area for additional information access
+
+* AC 17: Clicking info icon displays tooltip with contextual information (TBD)
+
 ***
 
