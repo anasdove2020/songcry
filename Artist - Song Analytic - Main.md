@@ -365,5 +365,70 @@ so that I can understand which platforms and sources are driving the most engage
 
 * AC 15: Clicking info icon displays tooltip with contextual information (TBD)
 
+### Task 8: Amount of Time Played Analytics
+
+**User Story:**
+
+GIVEN that I am viewing the Overview tab,  
+AS an artist,  
+I want to see detailed analytics about the total amount of time my song has been played  
+so that I can understand listening duration patterns and compare performance against other songs.
+
+**Acceptance Criteria:**
+
+* AC 1: Amount of Time Played section displays below the Play Sources section within the Overview tab
+
+* AC 2: Section header shows "Amount of Time Played" with subtitle "Play Time (Hours)"
+
+* AC 3: Main metric displays total hours in large format (e.g., "3.7 H") with prominent styling
+
+* AC 4: Contextual description shows comparison status (e.g., "About the same as usual")
+
+* AC 5: Interactive data point displays tooltip on hover showing detailed information:
+
+  * Total playtime with specific duration (e.g., "Total playtime: 3.7 Hours")
+
+  * Time period reference (e.g., "March 2025")
+
+  * Tooltip appears with smooth animation and clear visual styling
+
+* AC 6: Line chart visualization displays time-based analytics with:
+
+  * Y-axis showing hours scale from 1.3 to 4.0 hours with appropriate intervals
+
+  * X-axis showing monthly progression (Jan, Feb, Mar, Apr, May)
+
+  * Pink/magenta colored line representing selected song performance ("La La Lost You")
+
+  * Gray colored line showing "Other songs average" for comparison
+
+  * Grid lines for easy data reading and trend analysis
+
+* AC 7: Chart includes interactive data point highlighting for March 2025 milestone
+
+* AC 8: Legend clearly identifies line colors and what they represent:
+
+  * Pink dot: "La La Lost You" (selected song)
+
+  * Gray dot: "Other songs average" (benchmark comparison)
+
+* AC 9: Chart supports hover interactions for detailed data point information
+
+* AC 10: All time-based data updates dynamically when different songs are selected from header dropdown
+
+* AC 11: Chart maintains responsive design across different screen sizes
+
+* AC 12: Visual styling remains consistent with other Overview tab analytics components
+
+* AC 13: Time calculations reflect accurate listening duration data
+
+* AC 14: Comparison metrics provide meaningful benchmark against artist's other songs
+
+* AC 15: Section remains accessible and functional only within the Overview tab context
+
+* AC 16: Header section includes info icon in the top left area for additional information access
+
+* AC 17: Clicking info icon displays tooltip with contextual information (TBD)
+
 ***
 
