@@ -2034,12 +2034,12 @@ so that I can understand how my songs perform in feeds and celebrate key achieve
 
 ***
 
-### Task 21: Performance Comparison
+### Task 21: Feed Insights Tab - Performance Comparison
 
 **User Story:**
 
 As a user,  
-I want to compare performance between my songs in the Feed Insights tab  
+I want to compare performance between my songs in the Feed Insights tab (positioned below Feed Performance section)  
 so that I can analyze which tracks are performing better and make data-driven decisions.
 
 **Acceptance Criteria:**
@@ -2050,7 +2050,11 @@ so that I can analyze which tracks are performing better and make data-driven de
 
 * AC 3: Clicking the dropdown opens a bottom sheet titled "Select data filter"
 
-* AC 4: Bottom sheet contains four filter options: "All-Time Songs in Feed" (selected by default), "Past Songs in Feed", "Current Songs in Feed", and "Top Songs in Profile"
+* AC 4: Bottom sheet contains four filter options:
+  * AC 4.1: All-Time Songs in Feed (selected by default with pink radio button)
+  * AC 4.2: Past Songs in Feed (unselected radio button)
+  * AC 4.3: Current Songs in Feed (unselected radio button with chevron > indicating nested navigation)
+  * AC 4.4: Top Songs in Profile (unselected radio button with chevron > indicating nested navigation)
 
 * AC 5: Selecting "Current Songs in Feed" opens a nested bottom sheet titled "Select songs in the feed" with song list and artist thumbnails
 
@@ -2060,49 +2064,47 @@ so that I can analyze which tracks are performing better and make data-driven de
 
 * AC 8: Each nested bottom sheet includes an "Apply" button to confirm selection
 
-* AC 9: Annotation feature explains "this will include the history songs in the feed, so literally comparing all the songs that is and was in the feed"
+* AC 9: Chart visualization displays performance comparison with dual metrics showing values like "230K" for both compared items
 
-* AC 10: Chart visualization displays performance comparison with dual metrics showing values like "230K" for both compared items
+* AC 10: Timeline spans from January to May with clear month labels (Jan, Feb, Mar, Apr, May)
 
-* AC 11: Timeline spans from January to May with clear month labels (Jan, Feb, Mar, Apr, May)
+* AC 11: Interactive tooltip appears on hover showing detailed information like "280 Total Plays (March 2025)"
 
-* AC 12: Interactive tooltip appears on hover showing detailed information like "280 Total Plays (March 2025)"
+* AC 12: Chart legend clearly shows comparison between selected song (e.g., "La La Lost You") vs "Avg. Songs in Feed"
 
-* AC 13: Chart legend clearly shows comparison between selected song (e.g., "La La Lost You") vs "Avg. Songs in Feed"
+* AC 13: Different colored lines distinguish between the selected song and average performance
 
-* AC 14: Different colored lines distinguish between the selected song and average performance
+* AC 14: Achievement cards section displays below the chart with swipeable horizontal scrolling
 
-* AC 15: Achievement cards section displays below the chart with swipeable horizontal scrolling
+* AC 15: Achievement cards show celebratory message like "This track is leading in performance!" with emoji decoration
 
-* AC 16: Achievement cards show celebratory message like "This track is leading in performance!" with emoji decoration
+* AC 16: Each achievement card displays the selected song's artwork as background or thumbnail
 
-* AC 17: Each achievement card displays the selected song's artwork as background or thumbnail
+* AC 17: Achievement cards include descriptive text explaining the song's performance achievements
 
-* AC 18: Achievement cards include descriptive text explaining the song's performance achievements
+* AC 18: "Say Thank You" button is available on achievement cards for outreach functionality
 
-* AC 19: "Say Thank You" button is available on achievement cards for outreach functionality
+* AC 19: "Share" button with share icon is available on achievement cards for social sharing
 
-* AC 20: "Share" button with share icon is available on achievement cards for social sharing
+* AC 20: Achievement cards support horizontal swiping gesture for navigation between multiple achievements
 
-* AC 21: Achievement cards support horizontal swiping gesture for navigation between multiple achievements
+* AC 21: Card design includes proper spacing, typography, and visual hierarchy for readability
 
-* AC 22: Card design includes proper spacing, typography, and visual hierarchy for readability
+* AC 22: Outreach functionality allows users to send appreciation messages to collaborators or team members
 
-* AC 23: Outreach functionality allows users to send appreciation messages to collaborators or team members
+* AC 23: Share functionality supports multiple platforms and formats for social media distribution
 
-* AC 24: Share functionality supports multiple platforms and formats for social media distribution
+* AC 24: All interactive elements provide visual feedback on tap/click with appropriate animations
 
-* AC 25: All interactive elements provide visual feedback on tap/click with appropriate animations
+* AC 25: Loading states are displayed when fetching comparison data or switching between filters
 
-* AC 26: Loading states are displayed when fetching comparison data or switching between filters
+* AC 26: Error handling displays appropriate messages if data cannot be loaded or comparison fails
 
-* AC 27: Error handling displays appropriate messages if data cannot be loaded or comparison fails
+* AC 27: Performance metrics update dynamically when different filter options are selected from dropdown
 
-* AC 28: Performance metrics update dynamically when different filter options are selected from dropdown
+* AC 28: Responsive design ensures proper display across different screen sizes and orientations
 
-* AC 29: Responsive design ensures proper display across different screen sizes and orientations
-
-* AC 30: Accessibility compliance includes screen reader support, keyboard navigation, and high contrast mode compatibility for all interactive elements
+* AC 29: Accessibility compliance includes screen reader support, keyboard navigation, and high contrast mode compatibility for all interactive elements
 
 ***
 
