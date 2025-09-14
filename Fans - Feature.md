@@ -35,7 +35,7 @@ so that I can proceed to choose my role in the app.
 - AC 1: Button click navigates user to choose role page
 ---
 
-**Title:** 
+**Title:**  
 Handle Google Sign Up Button
 
 **User Story:**  
@@ -50,7 +50,7 @@ so that I can quickly create an account without manual registration.
 
 ---
 
-**Title:** 
+**Title:**  
 Handle Facebook Sign Up Button
 
 **User Story:**  
@@ -65,7 +65,7 @@ so that I can quickly create an account using my existing social media profile.
 
 ---
 
-**Title:** 
+**Title:**  
 Handle Apple ID Sign Up Button
 
 **User Story:**  
@@ -80,7 +80,7 @@ so that I can securely create an account with Apple's privacy features.
 
 ---
 
-**Title:** 
+**Title:**  
 Handle Login Link Click
 
 **User Story:**  
@@ -95,7 +95,7 @@ so that I can access my existing account.
 
 ## Choose Role Page
 
-**Title:** 
+**Title:**  
 Create Choose Role Page UI
 
 **User Story:**  
@@ -113,7 +113,7 @@ so that I can choose whether I'm joining as a Fan or an Artist.
 
 ---
 
-**Title:** 
+**Title:**  
 Handle Fan Role Selection
 
 **User Story:**  
@@ -126,7 +126,7 @@ so that I can proceed to confirm my choice and access fan-specific features.
 
 ---
 
-**Title:** 
+**Title:**  
 Handle Artist Role Selection
 
 **User Story:**  
@@ -139,13 +139,12 @@ so that I can proceed to confirm my choice and access artist-specific features.
 
 ---
 
-# Sign Up Module
+## Module = Sign Up
 
-## Fan Role Confirmation Page
+### Page = Fan Role Confirmation
 
-**Task 10**
-
-**Title:** Create Fan Role Confirmation Page UI
+**Title:**  
+Create Fan Role Confirmation Page UI
 
 **User Story:**  
 GIVEN user selects Fan role on Choose Role Page,  
@@ -162,9 +161,8 @@ so that I can confirm my choice and understand what being a Fan means.
 
 ---
 
-**Task 11**
-
-**Title:** Handle Fan Role Confirmation
+**Title:**  
+Handle Fan Role Confirmation
 
 **User Story:**  
 As a new user on Fan Role Confirmation Page,  
@@ -176,9 +174,8 @@ so that I can proceed to set up my email.
 
 ---
 
-**Task 12**
-
-**Title:** Handle Back Navigation from Fan Role Confirmation Page
+**Title:**  
+Handle Back Navigation from Fan Role Confirmation Page
 
 **User Story:**  
 GIVEN user is on Fan Role Confirmation Page,  
@@ -193,11 +190,10 @@ so that I can return to the Choose Role Page.
 
 ---
 
-## Set Username Page
+### Page = Set Username
 
-**Task 13**
-
-**Title:** Create Set Username Page UI
+**Title:**  
+Create Set Username Page UI
 
 **User Story:**  
 GIVEN user completes Fan Role Confirmation,  
@@ -214,9 +210,8 @@ so that I can create a unique username for my account.
 
 ---
 
-**Task 14**
-
-**Title:** Handle Username Input Validation
+**Title:**  
+Handle Username Input Validation
 
 **User Story:**  
 As a new user on Set Username Page,  
@@ -232,9 +227,8 @@ so that I know if my chosen username is available and meets requirements.
 
 ---
 
-**Task 15**
-
-**Title:** Handle Continue Button from Set Username Page
+**Title:**  
+Handle Continue Button from Set Username Page
 
 **User Story:**  
 As a new user on Set Username Page,  
@@ -247,5 +241,3 @@ so that I can proceed to complete my account setup.
 - AC 3: Button click navigates to next step in onboarding process
 
 ---
-
-*Note: This completes the initial user onboarding experience for Fan role.*
