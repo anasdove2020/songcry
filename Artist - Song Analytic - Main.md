@@ -2034,3 +2034,75 @@ so that I can understand how my songs perform in feeds and celebrate key achieve
 
 ***
 
+### Task 21: Performance Comparison
+
+**User Story:**
+
+As a user,  
+I want to compare performance between my songs in the Feed Insights tab  
+so that I can analyze which tracks are performing better and make data-driven decisions.
+
+**Acceptance Criteria:**
+
+* AC 1: Performance Comparison section displays with subtitle "Compare between your songs"
+
+* AC 2: Dropdown "All-Time Songs in Feed" is prominently displayed at the top of the section
+
+* AC 3: Clicking the dropdown opens a bottom sheet titled "Select data filter"
+
+* AC 4: Bottom sheet contains four filter options: "All-Time Songs in Feed" (selected by default), "Past Songs in Feed", "Current Songs in Feed", and "Top Songs in Profile"
+
+* AC 5: Selecting "Current Songs in Feed" opens a nested bottom sheet titled "Select songs in the feed" with song list and artist thumbnails
+
+* AC 6: Selecting "Top Songs in Profile" opens a nested bottom sheet titled "Select top songs in profile" with top performing songs list
+
+* AC 7: Nested bottom sheets display songs with artist thumbnails, song titles, and radio button selection
+
+* AC 8: Each nested bottom sheet includes an "Apply" button to confirm selection
+
+* AC 9: Annotation feature explains "this will include the history songs in the feed, so literally comparing all the songs that is and was in the feed"
+
+* AC 10: Chart visualization displays performance comparison with dual metrics showing values like "230K" for both compared items
+
+* AC 11: Timeline spans from January to May with clear month labels (Jan, Feb, Mar, Apr, May)
+
+* AC 12: Interactive tooltip appears on hover showing detailed information like "280 Total Plays (March 2025)"
+
+* AC 13: Chart legend clearly shows comparison between selected song (e.g., "La La Lost You") vs "Avg. Songs in Feed"
+
+* AC 14: Different colored lines distinguish between the selected song and average performance
+
+* AC 15: Achievement cards section displays below the chart with swipeable horizontal scrolling
+
+* AC 16: Achievement cards show celebratory message like "This track is leading in performance!" with emoji decoration
+
+* AC 17: Each achievement card displays the selected song's artwork as background or thumbnail
+
+* AC 18: Achievement cards include descriptive text explaining the song's performance achievements
+
+* AC 19: "Say Thank You" button is available on achievement cards for outreach functionality
+
+* AC 20: "Share" button with share icon is available on achievement cards for social sharing
+
+* AC 21: Achievement cards support horizontal swiping gesture for navigation between multiple achievements
+
+* AC 22: Card design includes proper spacing, typography, and visual hierarchy for readability
+
+* AC 23: Outreach functionality allows users to send appreciation messages to collaborators or team members
+
+* AC 24: Share functionality supports multiple platforms and formats for social media distribution
+
+* AC 25: All interactive elements provide visual feedback on tap/click with appropriate animations
+
+* AC 26: Loading states are displayed when fetching comparison data or switching between filters
+
+* AC 27: Error handling displays appropriate messages if data cannot be loaded or comparison fails
+
+* AC 28: Performance metrics update dynamically when different filter options are selected from dropdown
+
+* AC 29: Responsive design ensures proper display across different screen sizes and orientations
+
+* AC 30: Accessibility compliance includes screen reader support, keyboard navigation, and high contrast mode compatibility for all interactive elements
+
+***
+
