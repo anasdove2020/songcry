@@ -557,3 +557,99 @@ so that users can upload and store their profile images during registration.
 - AC 10: Security measures to prevent malicious file uploads
 
 ---
+
+### Task: Username Suggestions Feature
+
+**User Story:**  
+As a new user on Set Username Page,  
+I want to see alternative username suggestions when my desired username is taken  
+so that I can quickly select an available username.
+
+**Acceptance Criteria:**
+- AC 1: Display list of 4 alternative username suggestions when username is taken
+- AC 2: Each suggestion shows green checkmark icon to indicate availability
+- AC 3: Suggestions are based on original username with numbers or variations
+- AC 4: Clicking on a suggestion automatically fills the username input field
+- AC 5: Suggestions update dynamically when user types new username
+- AC 6: Suggestions are validated for availability before display
+- AC 7: Suggestions follow same character rules as manual input
+
+---
+
+### Task: Keyboard Integration and Input Handling
+
+**User Story:**  
+As a new user on Set Username Page,  
+I want seamless keyboard interaction with username input and suggestions  
+so that I can efficiently navigate and select usernames.
+
+**Acceptance Criteria:**
+- AC 1: Virtual keyboard appears when username input field is focused on mobile
+- AC 2: Keyboard shows "Done" button for completing input
+- AC 3: Arrow keys navigate through username suggestions list
+- AC 4: Enter key selects highlighted suggestion
+- AC 5: Escape key dismisses suggestions list
+- AC 6: Tab key moves focus between input field and suggestions
+- AC 7: Keyboard shortcuts work consistently across devices
+
+---
+
+### Task: Inappropriate Content Detection
+
+**User Story:**  
+As a new user on Set Username Page,  
+I want to be prevented from using inappropriate words in my username  
+so that the platform maintains community standards.
+
+**Acceptance Criteria:**
+- AC 1: Real-time detection of inappropriate words during typing
+- AC 2: Display error message "Username can't contain inappropriate words" for blocked content
+- AC 3: Input field shows red border when inappropriate content is detected
+- AC 4: Comprehensive profanity filter covering multiple languages
+- AC 5: Context-aware filtering to avoid false positives
+- AC 6: Clear error state when inappropriate content is removed
+- AC 7: Suggestions exclude inappropriate variations
+
+---
+
+### Task: Character Validation and Format Rules
+
+**User Story:**  
+As a new user on Set Username Page,  
+I want clear feedback about allowed characters in my username  
+so that I understand the formatting requirements.
+
+**Acceptance Criteria:**
+- AC 1: Display error message "Username can only include letters, numbers, underscores and periods(.)" for invalid characters
+- AC 2: Block special characters like slashes, spaces, and symbols during input
+- AC 3: Input field shows red border when invalid characters are detected
+- AC 4: Real-time character filtering prevents invalid input
+- AC 5: Helper text shows allowed character format below input field
+- AC 6: Error state clears when all characters become valid
+- AC 7: Character count indicator shows remaining allowed characters
+
+---
+
+### Task: Create Fan Account API Endpoint
+
+**User Story:**  
+As a backend developer,  
+I want to create a comprehensive API endpoint for fan account creation  
+so that users can register with email, password, username, and profile picture.
+
+**Acceptance Criteria:**
+- AC 1: Create POST endpoint `/api/auth/create-fan-account` for complete account creation
+- AC 2: Endpoint accepts JSON payload with email, password, username, and profile_picture_url
+- AC 3: Validate all required fields are present and properly formatted
+- AC 4: Hash password using bcrypt with appropriate salt rounds
+- AC 5: Verify email uniqueness and username availability
+- AC 6: Create user record in database with fan role
+- AC 7: Generate JWT token for immediate authentication
+- AC 8: Return HTTP 201 with user data and authentication token
+- AC 9: Return HTTP 400 for validation errors with detailed error messages
+- AC 10: Return HTTP 409 for duplicate email or username conflicts
+- AC 11: Implement proper error handling for database operations
+- AC 12: Send welcome email to newly registered user
+- AC 13: Log account creation events for analytics and security
+
+---
